@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Book.ent">
+%BOOK_ENTITIES;
+]>
+
+<chapter id="chap-Documentation-Ardour_Book-Bugs_Chapter">
+  <title>Bugs</title>
+  <para>
+    This chapter tries to reference bugs in the Ardour
+    <ulink url="http://mantis.ardour.org">Bug Tracker</ulink> and group and
+    prioritize them according my taste.
+  </para>
+
+  <para>
+    It will also contain notes on bugs I encounter so I can investigate them
+    further before putting them in the bug tracker. If a bug is on a private
+    branch then the notes will only remain until it is fixed.
+  </para>
+
+  <section id="sect-Documentation-Ardour_Book-Bugs_Chapter-Mantis_Bugs">
+    <title>Mantis Bugs</title>
+    <para>
+      These are bugs reported by other users in the bug tracker that I think
+      are important.
+    </para>
+  </section>
+
+  <section id="sect-Documentation-Ardour_Book-Bugs_Chapter-General_Bugs">
+    <title>General Bugs</title>
+    <para>
+      These bugs are general bugs in no catagory.
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          Region Selection follows track selection
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Region Selection seems strange around playhead
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Using Shift and Arrow keys to use shuttle playback the playback
+          rate stays the same when playback stops, It should propbably reset
+          to normal playback
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Moving dettached widgets eg transport bar with mouse doesn't
+          follow pointer
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Moving first loop marker doesn't always work, trying to move loop
+          start moves loop end marker
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Cannot Audition while playing back session
+        </para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section id="sect-Documentation-Ardour_Book-Bugs_Chapter-Windows_Bugs">
+    <title>Windows Branch Specific Bugs</title>
+    <para>
+      These bugs are specific to the windows/mingw branch.
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          re-load session
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          error on exit, probably to do with the GUI event processing timer
+          etc
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          windows stacking when using file selector
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          splash screen in front of audio device dialog
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          crash on close related to processing events in idle timer
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          crash on play audiofile from freesound import dialog
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          no font in canvas pointer text
+        </para>
+      </listitem>
+    </itemizedlist>
+  </section>
+</chapter>
