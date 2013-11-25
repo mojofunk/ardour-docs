@@ -58,6 +58,96 @@
     </itemizedlist>
   </section>
 
+  <section id="sect-Documentation-Ardour_Book-TODO_Chapter-Code_Review">
+    <title>Code Review</title>
+    <para>
+      These are things to keep in mind while performing code review.
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          Documentation
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Testing, Tests that could be written, Testability of a class or
+          function.
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Function length
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Identifier naming(Function/parameters/etc)
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          File length
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Refactoring
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Code Style
+        </para>
+      </listitem>
+    </itemizedlist>
+
+    <para>
+      Start a code review of the Ardour source starting with the libraries
+      at the lowest level of the stack and working back up to the GUI. A
+      rough order of libraries would be:
+    </para>
+    <orderedlist>
+      <listitem>
+        <para>
+          libpbd
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          evoral
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          libmidi++
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          libardour
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          libcontrol_protocol
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          gtk_ardour
+        </para>
+      </listitem>
+    </orderedlist>
+  </section>
+
   <section id="sect-Documentation-Ardour_Book-TODO_Chapter-Refactoring">
     <title>Refactoring</title>
     <para>
