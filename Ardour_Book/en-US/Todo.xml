@@ -22,24 +22,6 @@
     <itemizedlist>
       <listitem>
         <para>
-          join gtk+ irc channels
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          contact inkscape windows devs/packagers
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          contact hexchat devs re mvsc packages
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
           Trawl Bug Tracker
         </para>
       </listitem>
@@ -53,6 +35,24 @@
       <listitem>
         <para>
           IRC
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          join gtk+ irc channels
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          contact inkscape windows devs/packagers
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          contact hexchat devs re mvsc packages
         </para>
       </listitem>
     </itemizedlist>
