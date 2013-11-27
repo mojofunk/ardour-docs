@@ -24,6 +24,27 @@
           Section on how to A/B two tracks with Exclusive solo
         </para>
       </listitem>
+
+      <listitem>
+        <para>
+          Section on recommended Audio Interfaces, update
+          <ulink url="https://community.ardour.org/realfaq#audioio">Ardour
+          FAQ</ulink> and add to manual
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Add non-insulting section to FAQ/Manual on how to start JACK in
+          realtime mode.
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Add section on how to contribute to manual to the manual.
+        </para>
+      </listitem>
     </itemizedlist>
   </section>
 
