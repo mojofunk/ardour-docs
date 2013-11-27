@@ -465,6 +465,13 @@
           avoid subst ardev_common.sh.in every build
         </para>
       </listitem>
+
+      <listitem>
+        <para>
+          is VERSION used for anything at the top of gtk2_ardour/wscript
+          build section?
+        </para>
+      </listitem>
     </itemizedlist>
   </section>
 
