@@ -356,8 +356,8 @@
       <listitem>
         <para>
           Session test that programmaticaly creates a session and writes it
-          to a directory that contains the arch it was built on and the
-          build
+          to a directory that contains the arch/platform it was built on and
+          the build identifier
         </para>
       </listitem>
 
