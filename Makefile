@@ -21,10 +21,17 @@ help::
 all:: Ardour_Book
 .PHONY : all
 
-build-ardour-book::
-	publican build --formats html,pdf --langs en-US --src_dir=Ardour_Book
+build-ardour-book-html::
+	publican build --formats html --langs en-US --src_dir=Ardour_Book
 
-build:: build-ardour-book
+build-ardour-book-pdf::
+	publican build --formats pdf --langs en-US --src_dir=Ardour_Book
+
+build-html:: build-ardour-book-html
+
+build-pdf:: build-ardour-book-pdf
+
+build:: build-ardour-book-html build-ardour-book-pdf
 
 .PHONY : build
 
