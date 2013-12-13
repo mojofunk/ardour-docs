@@ -151,27 +151,15 @@
   <section id="sect-Documentation-Ardour_Book-TODO_Chapter-Refactoring">
     <title>Refactoring</title>
     <para>
-      These are some possible refactorings I've noticed.
+      These are some possible refactorings I've noticed. This also includes
+      things like keeping the functionality the same while changing library
+      dependencies etc
     </para>
 
     <itemizedlist>
       <listitem>
         <para>
           establish rough target for file size in lines, header includes etc
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          move dialog functions into classes or just move functions into new
-          file first.
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          anything in libpbd that has equiv in boost etc replace PBD::split
-          and PBD::replace_all
         </para>
       </listitem>
 
@@ -184,26 +172,13 @@
 
       <listitem>
         <para>
-          push clock code from PBD::file_manager to PBD::get_microseconds
-          and test
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
           AudioBackend destructor has to be implemented?
         </para>
       </listitem>
 
       <listitem>
         <para>
-          rename ProcessThread to ProcessContext
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          put pbd/thread_utils in PBD namespace
+          rename ARDOUR::ProcessThread to ARDOUR::ProcessContext
         </para>
       </listitem>
 
@@ -218,55 +193,6 @@
 
       <listitem>
         <para>
-          PBD::ControllableDescriptor should be in ARDOUR::
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          PBD::Controllable should be in ARDOUR:: ?
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          rename hardware_concurrency in pbd/cpus.h and put it in PBD
-          namespace
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          Can PBD::Destructable and PBD::?? be merged into PBD::Object
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          Can EnumWriter be replaced with TypeFactory from libmojo?
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          Rename PBD::EnvironmentalProtectionAgency
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          put pbd/failed_constructor.h in PBD namespace
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          correct docs for PBD::path_is_within
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
           correct all header include ifdefs to be C and C++ standards
           compliant
         </para>
@@ -276,6 +202,60 @@
         <para>
           Move SystemExec from gtk_ardour into PBD and test. although why
           not glibmm
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Rename ARDOUR::init_post_engine and write docs about why it needs
+          to be called after audio engine is valid etc.
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          rename libardour/globals.cc, most of the functions in it are
+          declared in ardour/ardour.h
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          MidiPatchManager::set_session is called when loading session which
+          seems to take a while, is it possible to call this after Session
+          is loaded during idle.
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Move PBD::canonical_path etc from pathexpand into file_utils.h/cc
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Move ARDOUR::touch_file into PBD::? only used by sfdb which we
+          don't use
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Use Serd? instead of lrdf in AudioLibrary?
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Should debug bits be visible outside a library
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Look at using boost::any instead of XMLNode for
+          properties/state/etc
         </para>
       </listitem>
     </itemizedlist>
@@ -325,6 +305,13 @@
           Shift click on automation point should reset it to 0dB
         </para>
       </listitem>
+
+      <listitem>
+        <para>
+          move dialog functions into classes or just move functions into new
+          file first.
+        </para>
+      </listitem>
     </itemizedlist>
   </section>
 
@@ -349,6 +336,12 @@
 
       <listitem>
         <para>
+          Try to add utf-8 and utf-16/UCS strings to libardour test utils
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
           AudioEngine test
         </para>
       </listitem>
@@ -364,6 +357,12 @@
       <listitem>
         <para>
           automatic latency testing. phoronix test integration
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          test memory consumption of XMLNode
         </para>
       </listitem>
     </itemizedlist>
@@ -406,12 +405,6 @@
           Fix Jack2 to quit properly if given -T flag, something about
           counting internal clients deciding whether or not to exit(or at
           least Paul said something like that)
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          move SndfileManager out of PBD into libardour
         </para>
       </listitem>
     </itemizedlist>
@@ -472,6 +465,13 @@
           build section?
         </para>
       </listitem>
+
+      <listitem>
+        <para>
+          Add script/s to ardour-build-scripts to test all build
+          configurations
+        </para>
+      </listitem>
     </itemizedlist>
   </section>
 
@@ -527,6 +527,176 @@
       <listitem>
         <para>
           Package LV2 mda
+        </para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section id="sect-Documentation-Ardour_Book-TODO_Chapter-LibPBD_Review">
+    <title>libpbd review</title>
+    <para>
+      Items relating to libpbd Review
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          Replace use of PBD::split and PBD::replace_all with boost
+          equivalents and remove.
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          move clock/timing code from PBD::file_manager to
+          PBD::get_microseconds and test
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          move SndfileManager out of PBD into libardour
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Write docs for PBD::EPA class and why it is necessary
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          put pbd/thread_utils in PBD namespace
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          PBD::ControllableDescriptor should be in ARDOUR::
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          PBD::Controllable should be in ARDOUR:: ?
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          rename hardware_concurrency in pbd/cpus.h and put it in PBD
+          namespace
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Can PBD::Destructable and PBD::?? be merged into PBD::Object
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Can EnumWriter be replaced with TypeFactory from libmojo?
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Rename PBD::EnvironmentalProtectionAgency
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          put pbd/failed_constructor.h in PBD namespace
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          correct docs for PBD::path_is_within
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          reimplement PBD::clear_directory in a portable way perhaps with
+          GIO
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Put pbd/command.h and pbd/memento.h inside PBD namespace
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Put pbd/mountpoint inside PBD and is it even necessary anymore?
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Put ControllableDescriptor into libardour
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          make pbd/path_expand.h/cc portable and test
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Use glib regex in PBD::path_expand instead of regex.h
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          call canonical_path in PBD::path_expand instead of realpath
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Change PBD::Pathscanner to return strings instead of string
+          pointers
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Change PBD::PathScanner to use glib regex
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Docs for PBD::init/cleanup
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Move pbd/pool.h into PBD namespace
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Rename CrossThreadPool MultiThreadPool?
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Tests and Docs for every function/method/class?
         </para>
       </listitem>
     </itemizedlist>
@@ -590,7 +760,7 @@
 
       <listitem>
         <para>
-          Copy README to package directory
+          Consolidate Semaphore classes
         </para>
       </listitem>
     </itemizedlist>
