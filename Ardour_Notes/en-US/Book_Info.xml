@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!DOCTYPE bookinfo PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Book.ent">
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
 %BOOK_ENTITIES;
 ]>
 
-<bookinfo id="book-Documentation-Ardour_Book-Ardour_Book">
-  <title>Ardour Book</title>
+<bookinfo id="Ardour_Notes">
+  <title>Ardour Notes</title>
   <subtitle>My notes about using and developing Ardour</subtitle>
   <productname>Documentation</productname>
   <productnumber>0.1</productnumber>

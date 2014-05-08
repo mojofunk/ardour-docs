@@ -1,12 +1,12 @@
-ARDOUR_BOOK_DIR ?= Ardour_Book
-ARDOUR_BOOK_FILE ?= $(ARDOUR_BOOK_DIR)/en-US/Ardour_Book.xml
+ARDOUR_BOOK_DIR ?= Ardour_Notes
+ARDOUR_BOOK_FILE ?= $(ARDOUR_BOOK_DIR)/en-US/Ardour_Notes.xml
 ARDOUR_BOOK_OUTDIR ?= tmp
 
 help::
 	@echo " The Following is a list of supported build targets:"
 	@echo
 	@echo " build:"
-	@echo "     Build Ardour Book."
+	@echo "     Build Ardour Notes."
 	@echo
 	@echo " format:"
 	@echo "     Format DocBook XML source using xmlformat."
@@ -18,20 +18,20 @@ help::
 	@echo "     Remove temporary files."
 	@echo
 
-all:: Ardour_Book
+all:: Ardour_Notes
 .PHONY : all
 
-build-ardour-book-html::
-	publican build --formats html --langs en-US --src_dir=Ardour_Book
+build-ardour-notes-html::
+	publican build --formats html --langs en-US --src_dir=Ardour_Notes
 
-build-ardour-book-pdf::
-	publican build --formats pdf --langs en-US --src_dir=Ardour_Book
+build-ardour-notes-pdf::
+	publican build --formats pdf --langs en-US --src_dir=Ardour_Notes
 
-build-html:: build-ardour-book-html
+build-html:: build-ardour-notes-html
 
-build-pdf:: build-ardour-book-pdf
+build-pdf:: build-ardour-notes-pdf
 
-build:: build-ardour-book-html build-ardour-book-pdf
+build:: build-ardour-notes-html build-ardour-notes-pdf
 
 .PHONY : build
 
@@ -43,7 +43,7 @@ format::
 
 .PHONY : format
 
-clean-ardour-book::
+clean-ardour-notes::
 	@rm -rf $(ARDOUR_BOOK_OUTDIR)
 
 .PHONY : clean-ardour-book
