@@ -12,6 +12,12 @@
     related to Ardour.
   </para>
 
+  <para>
+    There is also the
+    <ulink url="http://ardour.org/post3.0.html">list</ulink> on the Ardour
+    website.
+  </para>
+
   <section id="sect-Documentation-Ardour_Book-TODO_Chapter-Community">
     <title>Community</title>
     <para>
@@ -255,7 +261,7 @@
       <listitem>
         <para>
           Look at using boost::any instead of XMLNode for
-          properties/state/etc
+          properties/state/etc, reimplement statesystem branch from old repo
         </para>
       </listitem>
     </itemizedlist>
@@ -407,6 +413,26 @@
           least Paul said something like that)
         </para>
       </listitem>
+
+      <listitem>
+        <para>
+          Aubio as of version 0.4.1 has issues building with mingw with jack
+          enabled.
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Aubio version 0.4.1 needs wine to be able to run unit tests and
+          build fails if not installed and able to execute tests. write
+          patch to add option to optionally disable unit tests or just email
+          author.
+        </para>
+      </listitem>
+    <listitem>
+    <para>Investigate building Aubio with fftw support rather than inbuilt oura
+    </para>
+    </listitem>
     </itemizedlist>
   </section>
 
@@ -610,20 +636,7 @@
 
       <listitem>
         <para>
-          put pbd/failed_constructor.h in PBD namespace
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
           correct docs for PBD::path_is_within
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          reimplement PBD::clear_directory in a portable way perhaps with
-          GIO
         </para>
       </listitem>
 
@@ -761,6 +774,28 @@
       <listitem>
         <para>
           Consolidate Semaphore classes
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Use waf to substitute version/program name etc in nsi installer
+          script
+        </para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section id="sect-Documentation-Ardour_Book-TODO_Chapter-Docs">
+    <title>Documentation</title>
+    <para>
+      Todo items relating to Documentation
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          Write feature matrix comparing similar "products"
         </para>
       </listitem>
     </itemizedlist>
