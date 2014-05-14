@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE bookinfo PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Guide.ent">
+%BOOK_ENTITIES;
+]>
+
+<bookinfo id="Ardour_Guide">
+  <title>Ardour Guide</title>
+  <subtitle>A Guide to using Ardour</subtitle>
+  <productname>Documentation</productname>
+  <productnumber>0.1</productnumber>
+  <edition>0</edition>
+  <pubsnumber>0</pubsnumber>
+  <abstract>
+    <para>
+      This guide is yet another attempt to provide instructions in the use of Ardour.
+    </para>
+  </abstract>
+  <corpauthor>
+    <inlinemediaobject>
+      <imageobject>
+        <imagedata fileref="Common_Content/images/title_logo.svg" format="SVG" />
+      </imageobject>
+    </inlinemediaobject>
+  </corpauthor>
+  <xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="Author_Group.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+</bookinfo>
