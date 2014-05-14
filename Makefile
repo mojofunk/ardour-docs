@@ -10,8 +10,8 @@ ARDOUR_GUIDE_OUTDIR ?= guide_tmp
 help::
 	@echo " The Following is a list of supported build targets:"
 	@echo
-	@echo " build:"
-	@echo "     Build Ardour Related Documentation."
+	@echo " all:"
+	@echo "     Generate HTML and PDF versions of the Documentation."
 	@echo
 	@echo " format:"
 	@echo "     Format DocBook XML source using xmlformat."
@@ -23,27 +23,26 @@ help::
 	@echo "     Remove temporary files."
 	@echo
 
-all:: Ardour_Notes Ardour_Guide
-.PHONY : all
-
-build-notes-html::
+notes-html::
 	publican build --formats html --langs en-US --src_dir=Ardour_Notes
 
-build-notes-pdf::
+notes-pdf::
 	publican build --formats pdf --langs en-US --src_dir=Ardour_Notes
 
-build-guide-html::
+guide-html::
 	publican build --formats html --langs en-US --src_dir=Ardour_Guide
 
-build-guide-pdf::
+guide-pdf::
 	publican build --formats pdf --langs en-US --src_dir=Ardour_Guide
 
-build-notes::build-notes-html build-notes-pdf
+notes::notes-html notes-pdf
+.PHONY : notes
 
-build-guide::build-guide-html build-guide-pdf
+guide::guide-html guide-pdf
+.PHONY : guide
 
-build:: build-notes build-guide
-.PHONY : build
+all:: notes guide
+.PHONY : all
 
 format::
 	@for file in `find . -name '*.xml' -type f`; \
