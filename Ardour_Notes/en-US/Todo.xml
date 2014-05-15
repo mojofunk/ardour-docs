@@ -513,7 +513,13 @@
     <itemizedlist>
       <listitem>
         <para>
-          portaudio build mess, write waf build ?
+          Build Waves backend
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Fix portaudio build to support directsound and other API?
         </para>
       </listitem>
 
