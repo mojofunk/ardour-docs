@@ -37,7 +37,20 @@
       are important.
     </para>
 
+    <para>
+      These bugs should stay on this page until they have been resolved. The
+      list is ordered roughly in the order of importance with the more
+      important bugs(as I see it) at the top.
+    </para>
+
     <itemizedlist>
+      <listitem>
+        <para>
+          <ulink url="http://tracker.ardour.org/view.php?id=5589">Cairo
+          Canvas Bugs</ulink>
+        </para>
+      </listitem>
+
       <listitem>
         <para>
           <ulink url="http://tracker.ardour.org/view.php?id=5745">Same
@@ -47,8 +60,8 @@
 
       <listitem>
         <para>
-          <ulink url="http://tracker.ardour.org/view.php?id=5589">Cairo
-          Canvas Bugs</ulink>
+          <ulink url="http://tracker.ardour.org/view.php?id=5668">
+          Auditioner output port connections are not restored </ulink>
         </para>
       </listitem>
     </itemizedlist>
@@ -81,7 +94,8 @@
   <section id="sect-Documentation-Ardour_Book-Bugs_Chapter-General_Bugs">
     <title>General Bugs</title>
     <para>
-      These bugs are general bugs in no catagory.
+      These are random possible bugs I've noticed need to be verified and
+      added to mantis if not already submitted.
     </para>
 
     <itemizedlist>
@@ -141,12 +155,6 @@
     </para>
 
     <itemizedlist>
-      <listitem>
-        <para>
-          re-load session
-        </para>
-      </listitem>
-
       <listitem>
         <para>
           error on exit, probably to do with the GUI event processing timer
