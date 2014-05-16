@@ -17,6 +17,26 @@
     <para>
       Weekly Goals for Ardour development
     </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          Resolve one valid bug from mantis
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Close/Resolve 2 bugs no longer valid
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Write weekly summary and send to ardour-dev list
+        </para>
+      </listitem>
+    </itemizedlist>
   </section>
 
   <section id="sect-Documentation-Ardour_Notes-Goals-Monthly">
@@ -24,6 +44,14 @@
     <para>
       Monthly Goals for Ardour development
     </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          Complete one song
+        </para>
+      </listitem>
+    </itemizedlist>
   </section>
 
   <section id="sect-Documentation-Ardour_Notes-Goals-LongTerm">
@@ -31,5 +59,13 @@
     <para>
       Long Term Goals for Ardour development
     </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          Employment
+        </para>
+      </listitem>
+    </itemizedlist>
   </section>
 </chapter>
