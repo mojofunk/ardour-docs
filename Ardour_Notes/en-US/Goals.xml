@@ -30,12 +30,6 @@
           Close/Resolve 2 bugs no longer valid
         </para>
       </listitem>
-
-      <listitem>
-        <para>
-          Write weekly summary and send to ardour-dev list
-        </para>
-      </listitem>
     </itemizedlist>
   </section>
 
@@ -51,6 +45,12 @@
           Complete one song
         </para>
       </listitem>
+
+      <listitem>
+        <para>
+          Write summary and send to ardour-dev list
+        </para>
+      </listitem>
     </itemizedlist>
   </section>
 
@@ -63,7 +63,19 @@
     <itemizedlist>
       <listitem>
         <para>
-          Employment
+          Employment or other Financial benefits
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Increase the stability and usability of Ardour
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          An official Windows release
         </para>
       </listitem>
     </itemizedlist>
