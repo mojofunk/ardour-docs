@@ -34,7 +34,19 @@
 
       <listitem>
         <para>
-          Read Forum
+          Read Ardour Mailing lists
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Read Ardour Forum
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Read Mixbus Forum
         </para>
       </listitem>
 
@@ -519,19 +531,13 @@
 
       <listitem>
         <para>
-          Fix portaudio build to support directsound and other API?
+          Fix portaudio build to support API's other than directsound?
         </para>
       </listitem>
 
       <listitem>
         <para>
           giomm interface keyword submit bug with patches upstream
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          Package LV2 deps serd, sord, sratom, lilv
         </para>
       </listitem>
 
@@ -790,21 +796,6 @@
         <para>
           Use waf to substitute version/program name etc in nsi installer
           script
-        </para>
-      </listitem>
-    </itemizedlist>
-  </section>
-
-  <section id="sect-Documentation-Ardour_Book-TODO_Chapter-Docs">
-    <title>Documentation</title>
-    <para>
-      Todo items relating to Documentation
-    </para>
-
-    <itemizedlist>
-      <listitem>
-        <para>
-          Write feature matrix comparing similar "products"
         </para>
       </listitem>
     </itemizedlist>
