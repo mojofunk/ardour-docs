@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<chapter id="chap-Documentation-Ardour_Notes-Ardour_Live_Tools">
+  <title>Ardour Live Tools</title>
+  <para>
+    These are some notes on how to modify and improve Ardour use as a live
+    performance tool.
+  </para>
+
+  <section id="sect-Documentation-Ardour_Notes-Ardour_Live_Tools-Recording">
+    <title>Recording</title>
+    <para>
+      What if any changes to recording would make Ardour better in as a live
+      performance tool.
+    </para>
+
+    <para>
+      Does manipulation of track controls like record, solo, mute etc need
+      to be able to be automated to occur at bar/beat boundaries or perhaps
+      queue until locate occurs etc
+    </para>
+  </section>
+
+  <section id="sect-Documentation-Ardour_Notes-Ardour_Live_Tools-Editing">
+    <title>Editing</title>
+    <para>
+      What if any changes to editing would make Ardour better in as a live
+      performance tool.
+    </para>
+
+    <para>
+      Muting regions using the mouse using Mute Tool
+    </para>
+
+    <para>
+      Tools for manipulation of automation data at snap intervals for
+      cutter/gapper type effects.
+    </para>
+
+    <para>
+      Create range selection and add automation points at snap-to setting?
+    </para>
+  </section>
+
+  <section id="sect-Documentation-Ardour_Notes-Ardour_Live_Tools-Looping">
+    <title>Looping</title>
+    <para>
+      An important part of live performance is being able to easily
+      manipulate loop points.
+    </para>
+
+    <para>
+      Be able to audition while transport is rolling to control
+      outs/headphones. Also being able to audition in sync.
+    </para>
+  </section>
+
+  <section id="sect-Documentation-Ardour_Notes-Ardour_Live_Tools-Controllers">
+    <title>Controllers</title>
+    <para>
+      Controllers play an integral part of live performance, so it will be
+      necessary to have a fast and discoverable way to bind controllers to
+      controls. This will be used for things like triggering changes in loop
+      points. The location window might be a good place to allow binding
+      controls for loop ranges.
+    </para>
+
+    <para>
+      Add support for a specific external controller such as an android or
+      iOS application?
+    </para>
+  </section>
+
+  <section id="sect-Documentation-Ardour_Notes-Ardour_Live_Tools-Effects">
+    <title>Effects</title>
+    <para>
+      Being able to bind controllers to effect parameters is important.
+    </para>
+  </section>
+</chapter>
