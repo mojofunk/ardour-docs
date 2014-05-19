@@ -91,6 +91,51 @@
     </itemizedlist>
   </section>
 
+  <section id="sect-Documentation-Ardour_Book-Bugs_Chapter-Cairo_Canvas_Bugs">
+    <title>Cairo Canvas Branch Bugs</title>
+    <para>
+      Some of these bugs may also exist in the master branch.
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          There is no loop region set when a session is created. Clicking on
+          the loop button has no effect.
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Setting a loop region with the locations window open doesn't
+          update the loop location. Have to reopen the dialog for it to
+          update.
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          How to access move region contents? in Object mode?
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Moving mouse pointer to start of region in object mode cursor
+          changes to trim left cursor and remains in that cursor when it
+          shouldn't
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Moving the mouse pointer to end of a region doesn't change cursor
+          to trim right cursor even though a right trim occurs
+        </para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
   <section id="sect-Documentation-Ardour_Book-Bugs_Chapter-General_Bugs">
     <title>General Bugs</title>
     <para>
