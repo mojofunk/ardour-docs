@@ -360,7 +360,7 @@
 
       <listitem>
         <para>
-          AudioEngine test
+          AudioEngine tests
         </para>
       </listitem>
 
@@ -374,13 +374,16 @@
 
       <listitem>
         <para>
-          automatic latency testing. phoronix test integration
+          Automatic stress/stability testing of Audioengine/Session paths at
+          various buffer sizes, samplerates etc. This will require some sort
+          of simultaneous loading of system subsystems etc. perhaps via
+          phoronix test integration
         </para>
       </listitem>
 
       <listitem>
         <para>
-          test memory consumption of XMLNode
+          Test memory consumption of XMLNode
         </para>
       </listitem>
     </itemizedlist>
