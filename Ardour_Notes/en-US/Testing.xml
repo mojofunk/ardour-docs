@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<chapter id="chap-Documentation-Ardour_Notes-Testing_Chapter">
+  <title>Testing</title>
+  <para>
+    Notes on unit tests and manual test cases that could be implemented.
+  </para>
+
+  <section id="sect-Documentation-Ardour_Notes-Testing_Chapter-Unit_Tests">
+    <title>Unit Testing</title>
+    <para>
+      These items are related to unit testing
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          path tests
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Try to add utf-8 and utf-16/UCS strings to libardour test utils
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          AudioEngine tests
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Test timestretch using different files, lengths etc.
+          <ulink url="http://tracker.ardour.org/view.php?id=5923">Crash or
+          distortion on timestretch</ulink>
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Session test that programmaticaly creates a session and writes it
+          to a directory that contains the arch/platform it was built on and
+          the build identifier
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Automatic stress/stability testing of Audioengine/Session paths at
+          various buffer sizes, samplerates etc. This will require some sort
+          of simultaneous loading of system subsystems etc. perhaps via
+          phoronix test integration
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Test memory consumption of XMLNode
+        </para>
+      </listitem>
+    </itemizedlist>
+  </section>
+</chapter>

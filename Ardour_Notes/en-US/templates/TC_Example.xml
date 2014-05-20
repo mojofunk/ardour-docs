@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="chap-Documentation-Ardour_Notes-TC_Example">
+  <title>Test Case Example</title>
+  <para>
+    This is a test paragraph in a section
+  </para>
+
+  <table frame='all'>
+    <title>Example Test Case</title>
+    <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <thead>
+        <row>
+          <entry namest="c1" nameend="c5">
+            Test Case ID 1
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            Objective
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            Objective text
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Mantis ID
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Pre-conditions
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            Pre-conditions text
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Dependencies
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            Test Case ID's that need to be performed before this test
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Step Number
+          </entry>
+
+          <entry namest="c2" nameend="c3">
+            Test Steps
+          </entry>
+
+          <entry>
+            Test Data
+          </entry>
+
+          <entry>
+            Expected Result
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            1
+          </entry>
+
+          <entry namest="c2" nameend="c3">
+            First Test Step
+          </entry>
+
+          <entry>
+            None
+          </entry>
+
+          <entry>
+            Nothing much
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2
+          </entry>
+
+          <entry namest="c2" nameend="c3">
+            Second Test Step but this step takes a really long long long
+            time to do so you better make sure you have a big cup of coffee
+            first.
+          </entry>
+
+          <entry>
+            Arabica Beans
+          </entry>
+
+          <entry>
+            Coffee Buzz
+          </entry>
+        </row>
+
+        <row>
+          <entry namest="c1" nameend="c5">
+            Notes
+          </entry>
+        </row>
+
+        <row>
+          <entry namest="c1" nameend="c5">
+            Notes Text
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+</section>

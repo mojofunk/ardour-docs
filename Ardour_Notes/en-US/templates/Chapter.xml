@@ -5,20 +5,20 @@
 %BOOK_ENTITIES;
 ]>
 
-<chapter id="chap-Documentation-Ardour_Book-Test_Chapter">
+<chapter id="chap-Documentation-Ardour_Notes-Test_Chapter">
   <title>Test Chapter</title>
   <para>
     This is a test paragraph
   </para>
 
-  <section id="sect-Documentation-Ardour_Book-Test_Chapter-Test_Section_1">
+  <section id="sect-Documentation-Ardour_Notes-Test_Chapter-Test_Section_1">
     <title>Test Section 1</title>
     <para>
       This is a test paragraph in a section
     </para>
   </section>
 
-  <section id="sect-Documentation-Ardour_Book-Test_Chapter-Test_Section_2">
+  <section id="sect-Documentation-Ardour_Notes-Test_Chapter-Test_Section_2">
     <title>Test Section 2</title>
     <para>
       This is a test paragraph in Section 2

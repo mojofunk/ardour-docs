@@ -82,6 +82,13 @@
       These are things to keep in mind while performing code review.
     </para>
 
+    <para>
+      The Ardour developers do not have any formal code review practices. I
+      think it would be good practice to review every commit and make note
+      of any improvements that could be made with the following list in
+      mind.
+    </para>
+
     <itemizedlist>
       <listitem>
         <para>
@@ -328,62 +335,6 @@
         <para>
           move dialog functions into classes or just move functions into new
           file first.
-        </para>
-      </listitem>
-    </itemizedlist>
-  </section>
-
-  <section id="sect-Documentation-Ardour_Book-TODO_Chapter-TEST">
-    <title>Test</title>
-    <para>
-      These items are related to tests or testing
-    </para>
-
-    <itemizedlist>
-      <listitem>
-        <para>
-          Windows German/French test image
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          path tests
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          Try to add utf-8 and utf-16/UCS strings to libardour test utils
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          AudioEngine tests
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          Session test that programmaticaly creates a session and writes it
-          to a directory that contains the arch/platform it was built on and
-          the build identifier
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          Automatic stress/stability testing of Audioengine/Session paths at
-          various buffer sizes, samplerates etc. This will require some sort
-          of simultaneous loading of system subsystems etc. perhaps via
-          phoronix test integration
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>
-          Test memory consumption of XMLNode
         </para>
       </listitem>
     </itemizedlist>
