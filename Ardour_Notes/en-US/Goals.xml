@@ -21,6 +21,18 @@
     <itemizedlist>
       <listitem>
         <para>
+          Review all commits
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Respond to or Confirm all new bug reports
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
           Resolve one valid bug from mantis
         </para>
       </listitem>
@@ -28,6 +40,24 @@
       <listitem>
         <para>
           Close/Resolve 2 bugs no longer valid
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Write one new Test Case
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Write one new unit test
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Run unit tests
         </para>
       </listitem>
     </itemizedlist>
@@ -49,6 +79,12 @@
       <listitem>
         <para>
           Write summary and send to ardour-dev list
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Perform all Test Cases
         </para>
       </listitem>
     </itemizedlist>
