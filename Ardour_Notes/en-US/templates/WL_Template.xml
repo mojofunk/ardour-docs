@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="chap-Documentation-Ardour_Notes-WS_Template">
+  <title>Week 21: Monday 19th May 2014</title>
+  <table frame='all'>
+    <title>Week 21</title>
+    <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <thead>
+        <row>
+          <entry namest="c1" nameend="c5">
+            Test Case ID 1
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            Review all commits
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            Yes/No
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Open Bugs
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            ID's
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Resolved Bugs
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            ID's
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs of interest
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            ID's
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            New Test Cases
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            Test Case ID's/links
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            New Unit Tests
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            Unit test descriptions
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Unit tests Results
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            Y/X Test Passed
+          </entry>
+        </row>
+
+        <row>
+          <entry namest="c1" nameend="c5">
+            Notes
+          </entry>
+        </row>
+
+        <row>
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry namest="c1" nameend="c5">
+            Weekly Notes Text
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+</section>
