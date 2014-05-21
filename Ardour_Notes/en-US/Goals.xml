@@ -8,14 +8,14 @@
 <chapter id="chap-Documentation-Ardour_Notes-Goals">
   <title>Goals</title>
   <para>
-    Personal goals for Ardour development divided into Weekly, Monthly and
-    Long Term goals.
+    Goals for Ardour development and related activities.
   </para>
 
   <section id="sect-Documentation-Ardour_Notes-Goals-Weekly">
-    <title>Weekly Goals</title>
+    <title>Weekly Tasks</title>
     <para>
-      Weekly Goals for Ardour development
+      These are some of the tasks I have in mind for the weekly goals. Each
+      week will have corresponding log of the work accomplished.
     </para>
 
     <itemizedlist>
@@ -66,7 +66,7 @@
   <section id="sect-Documentation-Ardour_Notes-Goals-Monthly">
     <title>Monthly Goals</title>
     <para>
-      Monthly Goals for Ardour development
+      Monthly Goals related to Ardour
     </para>
 
     <itemizedlist>
@@ -78,7 +78,7 @@
 
       <listitem>
         <para>
-          Write summary and send to ardour-dev list
+          Write summary and send to ardour-dev list eventually.
         </para>
       </listitem>
 
