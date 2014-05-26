@@ -1,3 +1,7 @@
 This "Documentation" is intended to be a place where I can write down information and ideas related to Ardour.
 
-It is not meant to be useful for others at this stage. 
+It is not meant to be useful for others at this stage.
+
+Documentation conventions
+
+File names are Camel Case with a underline char between words
