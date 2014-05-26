@@ -38,8 +38,7 @@
             Bugs Confirmed
           </entry>
 
-          <entry namest="c2" nameend="c5">
-          </entry>
+          <entry namest="c2" nameend="c5"></entry>
         </row>
 
         <row>
@@ -67,8 +66,7 @@
             Bugs of interest
           </entry>
 
-          <entry namest="c2" nameend="c5">
-          </entry>
+          <entry namest="c2" nameend="c5"></entry>
         </row>
       </tbody>
     </tgroup>
@@ -141,11 +139,9 @@
             Linux(Fedora 20)
           </entry>
 
-          <entry>
-          </entry>
+          <entry></entry>
 
-          <entry namest="c4" nameend="c5">
-          </entry>
+          <entry namest="c4" nameend="c5"></entry>
         </row>
 
         <row>
@@ -175,11 +171,9 @@
             Windows 7
           </entry>
 
-          <entry>
-          </entry>
+          <entry></entry>
 
-          <entry namest="c4" nameend="c5">
-          </entry>
+          <entry namest="c4" nameend="c5"></entry>
         </row>
 
         <row>
@@ -195,8 +189,7 @@
             None
           </entry>
 
-          <entry namest="c4" nameend="c5">
-          </entry>
+          <entry namest="c4" nameend="c5"></entry>
         </row>
 
         <row>
@@ -230,11 +223,9 @@
             Linux(Fedora 20)
           </entry>
 
-          <entry>
-          </entry>
+          <entry></entry>
 
-          <entry namest="c4" nameend="c5">
-          </entry>
+          <entry namest="c4" nameend="c5"></entry>
         </row>
 
         <row>
@@ -246,21 +237,17 @@
             Windows 7
           </entry>
 
-          <entry>
-          </entry>
+          <entry></entry>
 
-          <entry namest="c4" nameend="c5">
-          </entry>
+          <entry namest="c4" nameend="c5"></entry>
         </row>
       </tbody>
     </tgroup>
   </table>
-<itemizedlist>
-<listitem>
-<para>
-</para>
-</listitem>
-</itemizedlist>
 
-
+  <itemizedlist>
+    <listitem>
+      <para></para>
+    </listitem>
+  </itemizedlist>
 </section>
