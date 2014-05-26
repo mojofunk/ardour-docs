@@ -12,6 +12,8 @@
 
   <xi:include href="Goals.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
+  <xi:include href="Weekly_Logs.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+
   <xi:include href="Bugs.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
   <xi:include href="Testing.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<chapter id="chap-Documentation-Ardour_Notes-Weekly-Logs">
+  <title>Weekly Logs</title>
+  <para>
+    Personal weekly logs of Ardour related activities.
+  </para>
+  <xi:include href="WL_2014Week21.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+</chapter>
