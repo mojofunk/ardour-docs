@@ -283,6 +283,13 @@
           properties/state/etc, reimplement statesystem branch from old repo
         </para>
       </listitem>
+
+      <listitem>
+        <para>
+          Refactor code in editor_timefx.cc and put it into libardour and
+          write tests for it.
+        </para>
+      </listitem>
     </itemizedlist>
   </section>
 
