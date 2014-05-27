@@ -68,4 +68,29 @@
       </listitem>
     </itemizedlist>
   </section>
+
+  <section id="sect-Documentation-Ardour_Notes-Testing_Chapter-Test_Cases">
+    <title>Test Cases</title>
+    <para>
+      Test Cases for checking that functionality in Ardour is working as
+      expected.
+    </para>
+
+    <para>
+      These Test Cases include images of the expected user interface
+      elements that are used for interaction during the tests. These may
+      vary slightly on different platforms so that should be indicated or
+      accounted for if there are major differences(with different reference
+      images)
+    </para>
+
+    <para>
+      Having reference images of the user interface while performing the
+      Tests will make it easier to understand the expected result. It can
+      also be used to indicate when the user interface has been changed and
+      the test cases and perhaps sections in the manual/guides need to be
+      updated.
+    </para>
+    <xi:include href="Test_Cases/New_Session.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  </section>
 </chapter>

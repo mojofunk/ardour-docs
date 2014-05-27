@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="chap-Documentation-Ardour_Notes-Testing_Chapter-New_Session">
+  <title>New Session</title>
+  <para>
+    Testing creation of a new Session.
+  </para>
+
+  <table frame='all'>
+    <title>Test Case Summary</title>
+    <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <thead>
+        <row>
+          <entry namest="c1" nameend="c5">
+            Test Case ID: New_Session
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            Objective
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            To test creating of a new session via the GUI
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Related Bugs:
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Pre-conditions
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            Pre-conditions text
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Dependencies
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            Installation Test Case?
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <table frame='all'>
+    <title>Test Case</title>
+    <tgroup cols='8' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <colspec colname='c6'/>
+      <colspec colname='c7'/>
+      <colspec colname='c8'/>
+      <thead>
+        <row>
+          <entry>
+            Step
+          </entry>
+
+          <entry namest="c2" nameend="c4">
+            Step Description
+          </entry>
+
+          <entry namest="c5" nameend="c7">
+            Expected Result
+          </entry>
+
+          <entry>
+            Input Data
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            1
+          </entry>
+
+          <entry namest="c2" nameend="c4">
+            Start Ardour application
+          </entry>
+
+          <entry namest="c5" nameend="c7">
+            The Session setup dialog is displayed
+            <xref linkend="Session_Setup_Dialog"/>
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2
+          </entry>
+
+          <entry namest="c2" nameend="c4">
+            Click on "New Session" icon
+          </entry>
+
+          <entry namest="c5" nameend="c7">
+            Next page of Session Setup dialog,
+            <xref linkend="Session_Setup_New_Session"/> is displayed and the
+            session name input field has the keyboard focus.
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            3
+          </entry>
+
+          <entry namest="c2" nameend="c4">
+            Enter name for new session in Session Name field.
+          </entry>
+
+          <entry namest="c5" nameend="c7">
+            The name is able to be entered successfully.
+          </entry>
+
+          <entry>
+            <xref linkend="Session_Name_Test_Data"/>
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            4
+          </entry>
+
+          <entry namest="c2" nameend="c4">
+            Using the mouse, click on the drop-down menu to select folder in
+            which to create the Session folder in.
+          </entry>
+
+          <entry namest="c5" nameend="c7">
+            The folder is successfully selected and displayed in the drop
+            down menu.
+          </entry>
+
+          <entry>
+            <xref linkend="Session_Folder_Test_Data"/>
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            5
+          </entry>
+
+          <entry namest="c2" nameend="c4">
+            Using the mouse, click on the Open button.
+          </entry>
+
+          <entry namest="c5" nameend="c7">
+            The Session Setup window is hidden and the Audio/Midi Dialog is
+            displayed.
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            6
+          </entry>
+
+          <entry namest="c2" nameend="c4">
+            Select the Audio/Midi configuration using the Audio/Midi dialog
+          </entry>
+
+          <entry namest="c5" nameend="c7">
+            Audio/Midi device selection was successful and the Editor Window
+            is displayed, <xref linkend="Editor_Window_New_Session"/>
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <section id="Session_Name_Test_Data">
+    <title>Session Names</title>
+    <para></para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          TestName
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Test Name With Spaces
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Session11
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          11Session
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Session-Hyphen
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Session_Underscore
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Session!@#$%^
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          1234567890
+        </para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section id="Session_Folder_Test_Data">
+    <title>Session Folders</title>
+    <para>
+      File system locations in which to test when selecting a folder to
+      create a Session folder
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          Home Directory
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          External Storage
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Read-only location
+        </para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section id="Session_Setup_Dialog">
+    <title>Session Setup Dialog</title>
+    <para></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/Session_Setup_Dialog.png"/>
+      </imageobject>
+    </mediaobject>
+  </section>
+
+  <section id="Session_Setup_New_Session">
+    <title>Session Setup Dialog, New Session Page</title>
+    <para></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/Session_Setup_New_Session.png"/>
+      </imageobject>
+    </mediaobject>
+  </section>
+
+  <section id="Audio_Midi_Setup_Dialog">
+    <title>Audio/Midi Setup Dialog</title>
+    <para></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/Audio_Midi_Setup_Dialog.png"/>
+      </imageobject>
+    </mediaobject>
+  </section>
+
+  <section id="Editor_Window_New_Session">
+    <title>Editor Window, New Session</title>
+    <para></para>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/Editor_Window_New_Session.png"/>
+      </imageobject>
+    </mediaobject>
+  </section>
+</section>
