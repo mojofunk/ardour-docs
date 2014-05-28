@@ -17,56 +17,72 @@
       These items are related to unit testing
     </para>
 
-    <itemizedlist>
-      <listitem>
-        <para>
-          path tests
-        </para>
-      </listitem>
+    <section id="sect-Documentation-Ardour_Notes-Testing_Chapter-Unit_Tests-Libardour">
+      <title></title>
+      <para>
+        Possible unit tests for libardour
+      </para>
 
-      <listitem>
-        <para>
-          Try to add utf-8 and utf-16/UCS strings to libardour test utils
-        </para>
-      </listitem>
+      <itemizedlist>
+        <listitem>
+          <para>
+            path tests
+          </para>
+        </listitem>
 
-      <listitem>
-        <para>
-          AudioEngine tests
-        </para>
-      </listitem>
+        <listitem>
+          <para>
+            Try to add utf-8 and utf-16/UCS strings to libardour test utils
+          </para>
+        </listitem>
 
-      <listitem>
-        <para>
-          Test timestretch using different files, lengths etc.
-          <ulink url="http://tracker.ardour.org/view.php?id=5923">Crash or
-          distortion on timestretch</ulink>
-        </para>
-      </listitem>
+        <listitem>
+          <para>
+            AudioEngine tests
+          </para>
+        </listitem>
 
-      <listitem>
-        <para>
-          Session test that programmaticaly creates a session and writes it
-          to a directory that contains the arch/platform it was built on and
-          the build identifier
-        </para>
-      </listitem>
+        <listitem>
+          <para>
+            Test timestretch using different files, lengths etc.
+            <ulink url="http://tracker.ardour.org/view.php?id=5923">Crash or
+            distortion on timestretch</ulink>
+          </para>
+        </listitem>
 
-      <listitem>
-        <para>
-          Automatic stress/stability testing of Audioengine/Session paths at
-          various buffer sizes, samplerates etc. This will require some sort
-          of simultaneous loading of system subsystems etc. perhaps via
-          phoronix test integration
-        </para>
-      </listitem>
+        <listitem>
+          <para>
+            Session test that programmaticaly creates a session and writes
+            it to a directory that contains the arch/platform it was built
+            on and the build identifier
+          </para>
+        </listitem>
 
-      <listitem>
-        <para>
-          Test memory consumption of XMLNode
-        </para>
-      </listitem>
-    </itemizedlist>
+        <listitem>
+          <para>
+            Automatic stress/stability testing of Audioengine/Session paths
+            at various buffer sizes, samplerates etc. This will require some
+            sort of simultaneous loading of system subsystems etc. perhaps
+            via phoronix test integration
+          </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section id="sect-Documentation-Ardour_Notes-Testing_Chapter-Unit_Tests-Libpbd">
+      <title></title>
+      <para>
+        Possible tests for libpbd
+      </para>
+
+      <itemizedlist>
+        <listitem>
+          <para>
+            Test memory consumption of XMLNode
+          </para>
+        </listitem>
+      </itemizedlist>
+    </section>
   </section>
 
   <section id="sect-Documentation-Ardour_Notes-Testing_Chapter-Test_Cases">
