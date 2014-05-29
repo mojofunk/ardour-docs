@@ -24,6 +24,7 @@
     website.
   </para>
   <xi:include href="TODO_General.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="TODO_Docs.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="TODO_Refactoring.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="TODO_GUI.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="TODO_Dependencies.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="sect-Documentation-Ardour_Book-Test_Chapter-Manual">
+  <title>Documentation</title>
+  <para>
+    This section contains TODO items related to all aspects of
+    documentation.
+  </para>
+
+  <itemizedlist>
+    <listitem>
+      <para>
+        Section on how to A/B two tracks with Exclusive solo
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Section on recommended Audio Interfaces, update
+        <ulink url="https://community.ardour.org/realfaq#audioio">Ardour
+        FAQ</ulink> and add to manual
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Add non-insulting section to FAQ/Manual on how to start JACK in
+        realtime mode.
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Add section on how to contribute to manual to the manual.
+      </para>
+    </listitem>
+  </itemizedlist>
+</section>
