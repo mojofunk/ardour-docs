@@ -30,4 +30,5 @@
   <xi:include href="TODO_Build_System.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="TODO_Windows.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="TODO_libpbd.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="TODO_libardour.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 </chapter>

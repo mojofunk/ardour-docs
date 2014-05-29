@@ -158,5 +158,11 @@
         Tests and Docs for every function/method/class?
       </para>
     </listitem>
+
+    <listitem>
+      <para>
+        Test memory consumption of XMLNode
+      </para>
+    </listitem>
   </itemizedlist>
 </section>
