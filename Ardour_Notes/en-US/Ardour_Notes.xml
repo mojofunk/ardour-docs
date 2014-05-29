@@ -18,6 +18,8 @@
 
   <xi:include href="Testing.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
+  <xi:include href="Code_Review.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+
   <xi:include href="Todo.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
   <xi:include href="Ardour_Live_Tools.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
