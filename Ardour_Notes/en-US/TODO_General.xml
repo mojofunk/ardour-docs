@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="chap-Documentation-Ardour_Notes-TODO_Chapter-TODO_General">
+  <title>General</title>
+  <para>
+    These are things general TODO item that do not belong in a particular
+    category.
+  </para>
+
+  <itemizedlist>
+    <listitem>
+      <para>
+        join gtk+ irc channels
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        contact inkscape windows devs/packagers
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        contact hexchat devs re mvsc packages
+      </para>
+    </listitem>
+  </itemizedlist>
+</section>

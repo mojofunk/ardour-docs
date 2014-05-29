@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="sect-Documentation-Ardour_Book-TODO_Chapter-TODO_GUI">
+  <title>GUI</title>
+  <para>
+    These items are related to the GUI
+  </para>
+
+  <itemizedlist>
+    <listitem>
+      <para>
+        Gtk+3 ?
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Consolidate locations and range markers. Why both?
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Disable remove loop and punch range in locations dialog
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        rename ArdourWindow to SessionWindow or something as these windows
+        depend on session
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Should the first page of new/open page in startup dialog allow
+        direct double click access to existing sessions.
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Shift click on automation point should reset it to 0dB
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        move dialog functions into classes or just move functions into new
+        file first.
+      </para>
+    </listitem>
+  </itemizedlist>
+</section>

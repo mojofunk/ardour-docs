@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="sect-Documentation-Ardour_Book-TODO_Chapter-TODO_Dependencies">
+  <title>Dependencies</title>
+  <para>
+    Items relating to Ardour dependencies
+  </para>
+
+  <itemizedlist>
+    <listitem>
+      <para>
+        update mingw-cppunit package to at least be a version epoch whatever
+        greater than fedora mingw package
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Update mingw packages to define native_pkg_name
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        build midi++/pbd/ardour as one dll?
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        remove ALSA reference in libardour wscript
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Fix Jack2 to quit properly if given -T flag, something about
+        counting internal clients deciding whether or not to exit(or at
+        least Paul said something like that)
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Aubio as of version 0.4.1 has issues building with mingw with jack
+        enabled.
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Aubio version 0.4.1 needs wine to be able to run unit tests and
+        build fails if not installed and able to execute tests. write patch
+        to add option to optionally disable unit tests or just email author.
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Investigate building Aubio with fftw support rather than inbuilt
+        oura
+      </para>
+    </listitem>
+  </itemizedlist>
+</section>

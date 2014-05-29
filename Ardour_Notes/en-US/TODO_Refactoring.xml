@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="sect-Documentation-Ardour_Book-TODO_Chapter-TODO_Refactoring">
+  <title>Refactoring</title>
+  <para>
+    These are some possible refactorings I've noticed. This also includes
+    things like keeping the functionality the same while changing library
+    dependencies etc
+  </para>
+
+  <itemizedlist>
+    <listitem>
+      <para>
+        establish rough target for file size in lines, header includes etc
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        move session directory names in libs/ardour/directory_names into
+        SessionDirectory class
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        AudioBackend destructor has to be implemented?
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        rename ARDOUR::ProcessThread to ARDOUR::ProcessContext
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Investigate whether it is desirable to replace AbstractUI with
+        something non-templated. How hard is it to remove all per thread
+        event buffers/thread registration. Are there any hueristics that can
+        be applied to simplify things
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        correct all header include ifdefs to be C and C++ standards
+        compliant
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Move SystemExec from gtk_ardour into PBD and test. although why not
+        glibmm
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Rename ARDOUR::init_post_engine and write docs about why it needs to
+        be called after audio engine is valid etc.
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        rename libardour/globals.cc, most of the functions in it are
+        declared in ardour/ardour.h
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        MidiPatchManager::set_session is called when loading session which
+        seems to take a while, is it possible to call this after Session is
+        loaded during idle.
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Move PBD::canonical_path etc from pathexpand into file_utils.h/cc
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Move ARDOUR::touch_file into PBD::? only used by sfdb which we don't
+        use
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Use Serd? instead of lrdf in AudioLibrary?
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Should debug bits be visible outside a library
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Look at using boost::any instead of XMLNode for
+        properties/state/etc, reimplement statesystem branch from old repo
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Refactor code in editor_timefx.cc and put it into libardour and
+        write tests for it.
+      </para>
+    </listitem>
+  </itemizedlist>
+</section>

@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="sect-Documentation-Ardour_Book-TODO_Chapter-TODO_libpbd">
+  <title>libpbd</title>
+  <para>
+    Items relating to libpbd
+  </para>
+
+  <itemizedlist>
+    <listitem>
+      <para>
+        Replace use of PBD::split and PBD::replace_all with boost
+        equivalents and remove.
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        move clock/timing code from PBD::file_manager to
+        PBD::get_microseconds and test
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        move SndfileManager out of PBD into libardour
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Write docs for PBD::EPA class and why it is necessary
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        put pbd/thread_utils in PBD namespace
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        PBD::ControllableDescriptor should be in ARDOUR::
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        PBD::Controllable should be in ARDOUR:: ?
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        rename hardware_concurrency in pbd/cpus.h and put it in PBD
+        namespace
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Can PBD::Destructable and PBD::?? be merged into PBD::Object
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Can EnumWriter be replaced with TypeFactory from libmojo?
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Rename PBD::EnvironmentalProtectionAgency
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        correct docs for PBD::path_is_within
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Put pbd/command.h and pbd/memento.h inside PBD namespace
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Put pbd/mountpoint inside PBD and is it even necessary anymore?
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Put ControllableDescriptor into libardour
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        make pbd/path_expand.h/cc portable and test
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Use glib regex in PBD::path_expand instead of regex.h
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        call canonical_path in PBD::path_expand instead of realpath
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Change PBD::Pathscanner to return strings instead of string pointers
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Change PBD::PathScanner to use glib regex
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Docs for PBD::init/cleanup
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Move pbd/pool.h into PBD namespace
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Rename CrossThreadPool MultiThreadPool?
+      </para>
+    </listitem>
+
+    <listitem>
+      <para>
+        Tests and Docs for every function/method/class?
+      </para>
+    </listitem>
+  </itemizedlist>
+</section>
