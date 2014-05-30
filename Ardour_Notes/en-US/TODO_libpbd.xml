@@ -391,6 +391,38 @@
             None
           </entry>
         </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Investigate whether it is desirable to replace AbstractUI with
+            something non-templated. How hard is it to remove all per thread
+            event buffers/thread registration. Are there any hueristics that
+            can be applied to simplify things
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Move PBD::canonical_path etc from pathexpand into
+            file_utils.h/cc
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
       </tbody>
     </tgroup>
   </table>
