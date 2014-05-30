@@ -11,61 +11,176 @@
     Items relating to build system and configuration
   </para>
 
-  <itemizedlist>
-    <listitem>
-      <para>
-        automatic code formatting
-      </para>
-    </listitem>
+  <table frame='all'>
+    <title>Build System TODO Items</title>
+    <tgroup cols='8' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <colspec colname='c6'/>
+      <colspec colname='c7'/>
+      <colspec colname='c8'/>
+      <thead>
+        <row>
+          <entry>
+            Date
+          </entry>
 
-    <listitem>
-      <para>
-        Continuous integration via jenkins/hudson etc?
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            Task
+          </entry>
 
-    <listitem>
-      <para>
-        Support building using MinGW on windows via cygwin?
-      </para>
-    </listitem>
+          <entry>
+            Minutes
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            None
+          </entry>
 
-    <listitem>
-      <para>
-        virt images for Fedora, Ubuntu/Debian, Windows xp, vista, 7 and 8?
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            automatic code formatting
+          </entry>
 
-    <listitem>
-      <para>
-        build farm using virt images?
-      </para>
-    </listitem>
+          <entry>
+            None
+          </entry>
+        </row>
 
-    <listitem>
-      <para>
-        build branch on all arches when it is updated
-      </para>
-    </listitem>
+        <row>
+          <entry>
+            None
+          </entry>
 
-    <listitem>
-      <para>
-        avoid subst ardev_common.sh.in every build
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            Update mingw packages to define native_pkg_name
+          </entry>
 
-    <listitem>
-      <para>
-        is VERSION used for anything at the top of gtk2_ardour/wscript build
-        section?
-      </para>
-    </listitem>
+          <entry>
+            None
+          </entry>
+        </row>
 
-    <listitem>
-      <para>
-        Add script/s to ardour-build-scripts to test all build
-        configurations
-      </para>
-    </listitem>
-  </itemizedlist>
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Continuous integration via jenkins/hudson etc?
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Support building using MinGW on windows via cygwin?
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            virt images for Fedora, Ubuntu/Debian, Windows xp, vista, 7 and
+            8?
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            build farm using virt images?
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            build branch on all arches when it is updated
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            avoid subst ardev_common.sh.in every build
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            is VERSION used for anything at the top of gtk2_ardour/wscript
+            build section?
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Add script/s to ardour-build-scripts to test all build
+            configurations
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
 </section>

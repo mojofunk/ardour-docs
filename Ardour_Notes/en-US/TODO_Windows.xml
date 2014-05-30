@@ -11,115 +11,301 @@
     Items relating to Windows build/release of Ardour
   </para>
 
-  <itemizedlist>
-    <listitem>
-      <para>
-        Build Waves backend
-      </para>
-    </listitem>
+  <table frame='all'>
+    <title>Windows TODO Items</title>
+    <tgroup cols='8' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <colspec colname='c6'/>
+      <colspec colname='c7'/>
+      <colspec colname='c8'/>
+      <thead>
+        <row>
+          <entry>
+            Date
+          </entry>
 
-    <listitem>
-      <para>
-        Fix portaudio build to support API's other than directsound?
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            Task
+          </entry>
 
-    <listitem>
-      <para>
-        giomm interface keyword submit bug with patches upstream
-      </para>
-    </listitem>
+          <entry>
+            Minutes
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            None
+          </entry>
 
-    <listitem>
-      <para>
-        Package LV2 reasonable synth
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            Build Waves backend
+          </entry>
 
-    <listitem>
-      <para>
-        Package LV2 unreasonable synth
-      </para>
-    </listitem>
+          <entry>
+            None
+          </entry>
+        </row>
 
-    <listitem>
-      <para>
-        Package LV2 midifilters
-      </para>
-    </listitem>
+        <row>
+          <entry>
+            None
+          </entry>
 
-    <listitem>
-      <para>
-        Package LV2 meters
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            Fix portaudio build to support API's other than directsound?
+          </entry>
 
-    <listitem>
-      <para>
-        Package LV2 mda
-      </para>
-    </listitem>
+          <entry>
+            None
+          </entry>
+        </row>
 
-    <listitem>
-      <para>
-        Get John to move pbd/fallback_folders.h to msvc folder
-      </para>
-    </listitem>
+        <row>
+          <entry>
+            None
+          </entry>
 
-    <listitem>
-      <para>
-        Get John to justify/remove msvc folder
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            giomm interface keyword submit bug with patches upstream
+          </entry>
 
-    <listitem>
-      <para>
-        Investigate defining __USE_MINGW_ANSI_STDIO or _POSIX for mingw
-        build
-      </para>
-    </listitem>
+          <entry>
+            None
+          </entry>
+        </row>
 
-    <listitem>
-      <para>
-        build with --windows-vst
-      </para>
-    </listitem>
+        <row>
+          <entry>
+            None
+          </entry>
 
-    <listitem>
-      <para>
-        Write test audio backend
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            Package LV2 reasonable synth
+          </entry>
 
-    <listitem>
-      <para>
-        Subst Ardour version into scripts for executable names
-      </para>
-    </listitem>
+          <entry>
+            None
+          </entry>
+        </row>
 
-    <listitem>
-      <para>
-        Investigate native font backend(not fontconfig) via Gtk+
-      </para>
-    </listitem>
+        <row>
+          <entry>
+            None
+          </entry>
 
-    <listitem>
-      <para>
-        doc section on developing for windows and testing/debugging
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            Package LV2 unreasonable synth
+          </entry>
 
-    <listitem>
-      <para>
-        Consolidate Semaphore classes
-      </para>
-    </listitem>
+          <entry>
+            None
+          </entry>
+        </row>
 
-    <listitem>
-      <para>
-        Use waf to substitute version/program name etc in nsi installer
-        script
-      </para>
-    </listitem>
-  </itemizedlist>
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Package LV2 midifilters
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Package LV2 meters
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Package LV2 mda
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Get John to move pbd/fallback_folders.h to msvc folder
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Get John to justify/remove msvc folder
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Investigate defining __USE_MINGW_ANSI_STDIO or _POSIX for mingw
+            build
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            build with --windows-vst
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Write test audio backend
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Subst Ardour version into scripts for executable names
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Investigate native font backend(not fontconfig) via Gtk+
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            doc section on developing for windows and testing/debugging
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Consolidate Semaphore classes
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Use waf to substitute version/program name etc in nsi installer
+            script
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Get John to justify/remove msvc folder
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
 </section>

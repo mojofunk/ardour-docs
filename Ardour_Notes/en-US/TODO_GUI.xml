@@ -8,53 +8,138 @@
 <section id="sect-Documentation-Ardour_Book-TODO_Chapter-TODO_GUI">
   <title>GUI</title>
   <para>
-    These items are related to the GUI
+    These items are related to the GUI, which mostly means code in
+    gtk2_ardour
   </para>
 
-  <itemizedlist>
-    <listitem>
-      <para>
-        Gtk+3 ?
-      </para>
-    </listitem>
+  <table frame='all'>
+    <title>GUI TODO Items</title>
+    <tgroup cols='8' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <colspec colname='c6'/>
+      <colspec colname='c7'/>
+      <colspec colname='c8'/>
+      <thead>
+        <row>
+          <entry>
+            Date
+          </entry>
 
-    <listitem>
-      <para>
-        Consolidate locations and range markers. Why both?
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            Task
+          </entry>
 
-    <listitem>
-      <para>
-        Disable remove loop and punch range in locations dialog
-      </para>
-    </listitem>
+          <entry>
+            Minutes
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            None
+          </entry>
 
-    <listitem>
-      <para>
-        rename ArdourWindow to SessionWindow or something as these windows
-        depend on session
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            Port to Gtk+3
+          </entry>
 
-    <listitem>
-      <para>
-        Should the first page of new/open page in startup dialog allow
-        direct double click access to existing sessions.
-      </para>
-    </listitem>
+          <entry>
+            None
+          </entry>
+        </row>
 
-    <listitem>
-      <para>
-        Shift click on automation point should reset it to 0dB
-      </para>
-    </listitem>
+        <row>
+          <entry>
+            None
+          </entry>
 
-    <listitem>
-      <para>
-        move dialog functions into classes or just move functions into new
-        file first.
-      </para>
-    </listitem>
-  </itemizedlist>
+          <entry namest="c2" nameend="c7">
+            Consolidate locations and range markers. Why both?
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Disable remove loop and punch range in locations dialog
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            rename ArdourWindow to SessionWindow or something as these
+            windows depend on session
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Should the first page of new/open page in startup dialog allow
+            direct double click access to existing sessions.
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Shift click on automation point should reset it to 0dB
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            move dialog functions into classes or just move functions into
+            new file first.
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
 </section>

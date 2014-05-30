@@ -12,23 +12,75 @@
     category.
   </para>
 
-  <itemizedlist>
-    <listitem>
-      <para>
-        join gtk+ irc channels
-      </para>
-    </listitem>
+  <table frame='all'>
+    <title>General TODO Items</title>
+    <tgroup cols='8' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <colspec colname='c6'/>
+      <colspec colname='c7'/>
+      <colspec colname='c8'/>
+      <thead>
+        <row>
+          <entry>
+            Date
+          </entry>
 
-    <listitem>
-      <para>
-        contact inkscape windows devs/packagers
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            Task
+          </entry>
 
-    <listitem>
-      <para>
-        contact hexchat devs re mvsc packages
-      </para>
-    </listitem>
-  </itemizedlist>
+          <entry>
+            Minutes
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            join gtk+ irc channels
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            contact inkscape windows devs/packagers
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            contact hexchat devs re mvsc packages
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
 </section>

@@ -11,48 +11,124 @@
     Items relating to libardour
   </para>
 
-  <itemizedlist>
-    <listitem>
-      <para>
-        path tests
-      </para>
-    </listitem>
+  <table frame='all'>
+    <title>libardour TODO Items</title>
+    <tgroup cols='8' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <colspec colname='c6'/>
+      <colspec colname='c7'/>
+      <colspec colname='c8'/>
+      <thead>
+        <row>
+          <entry>
+            Date
+          </entry>
 
-    <listitem>
-      <para>
-        Try to add utf-8 and utf-16/UCS strings to libardour test utils
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            Task
+          </entry>
 
-    <listitem>
-      <para>
-        AudioEngine tests
-      </para>
-    </listitem>
+          <entry>
+            Minutes
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            None
+          </entry>
 
-    <listitem>
-      <para>
-        Test timestretch using different files, lengths etc.
-        <ulink url="http://tracker.ardour.org/view.php?id=5923">Crash or
-        distortion on timestretch</ulink>
-      </para>
-    </listitem>
+          <entry namest="c2" nameend="c7">
+            path tests
+          </entry>
 
-    <listitem>
-      <para>
-        Session test that programmaticaly creates a session and writes it to
-        a directory that contains the arch/platform it was built on and the
-        build identifier
-      </para>
-    </listitem>
+          <entry>
+            None
+          </entry>
+        </row>
 
-    <listitem>
-      <para>
-        Automatic stress/stability testing of Audioengine/Session paths at
-        various buffer sizes, samplerates etc. This will require some sort
-        of simultaneous loading of system subsystems etc. perhaps via
-        phoronix test integration
-      </para>
-    </listitem>
-  </itemizedlist>
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Try to add utf-8 and utf-16/UCS strings to libardour test utils
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            AudioEngine tests
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Test timestretch using different files, lengths etc.
+            <ulink url="http://tracker.ardour.org/view.php?id=5923">Crash or
+            distortion on timestretch</ulink>
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Session test that programmaticaly creates a session and writes
+            it to a directory that contains the arch/platform it was built
+            on and the build identifier
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Automatic stress/stability testing of Audioengine/Session paths
+            at various buffer sizes, samplerates etc. This will require some
+            sort of simultaneous loading of system subsystems etc. perhaps
+            via phoronix test integration
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
 </section>
