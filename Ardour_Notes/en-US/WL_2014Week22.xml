@@ -1,0 +1,521 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="chap-Documentation-Ardour_Notes-WL_2014Week22">
+  <title>2014 Week 22</title>
+  <table frame='all'>
+    <title>Bug Summary</title>
+    <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <thead>
+        <row>
+          <entry namest="c1" nameend="c5">
+            Bug Summary
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            Bugs Opened
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs Confirmed
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs Resolved
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs Closed
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs of interest
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            <ulink url="http://tracker.ardour.org/view.php?id=5851">5851</ulink>
+            <ulink url="http://tracker.ardour.org/view.php?id=5921">5921</ulink>
+            <ulink url="http://tracker.ardour.org/view.php?id=5940">5940</ulink>
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <table frame='all'>
+    <title>Test Summary</title>
+    <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <thead>
+        <row>
+          <entry namest="c1" nameend="c5">
+            Test Summary
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            New Test Cases
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            <xref linkend="chap-Documentation-Ardour_Notes-Testing_Chapter-New_Session"/>
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            New Unit Tests
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>
+            libardour Unit tests
+          </entry>
+
+          <entry>
+            Platform
+          </entry>
+
+          <entry>
+            Passed
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            Test Failures
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Linux(Fedora 20)
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            One Process per test
+          </entry>
+
+          <entry>
+            Linux(Fedora 20)
+          </entry>
+
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            Didn't perform tests
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Windows 7
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            One Process per test
+          </entry>
+
+          <entry>
+            Windows 7
+          </entry>
+
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>
+            libpbd Unit tests
+          </entry>
+
+          <entry>
+            Platform
+          </entry>
+
+          <entry>
+            Passed
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            Test Failures
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Linux(Fedora 20)
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Windows 7
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <table frame='all'>
+    <title>Task Summary</title>
+    <tgroup cols='8' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <colspec colname='c6'/>
+      <colspec colname='c7'/>
+      <colspec colname='c8'/>
+      <thead>
+        <row>
+          <entry>
+            Date
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Task
+          </entry>
+
+          <entry>
+            Minutes
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            2014/5/27
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Rework Weekly log template to include date and estimates time
+            spent on tasks.
+          </entry>
+
+          <entry>
+            20
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/27
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Tested using temporary jack server option on windows(mingw)
+            build.
+          </entry>
+
+          <entry>
+            15
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/27
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Responded to email from John Emmas on jack temporary server
+            option
+          </entry>
+
+          <entry>
+            10
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/27
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Wrote Test Case template
+          </entry>
+
+          <entry>
+            60
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/27
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Wrote a Test Case for creating a new Session,
+            <xref linkend="chap-Documentation-Ardour_Notes-Testing_Chapter-New_Session"/>
+          </entry>
+
+          <entry>
+            60
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/28
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Split up unit test section into separate sections for libardour
+            and libpbd
+          </entry>
+
+          <entry>
+            10
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/28
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Tested mixbus specific jack server path code in jack backend
+            would build on mingw.
+          </entry>
+
+          <entry>
+            10
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/28
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Refactored jack server path code in jack backend in new branch.
+          </entry>
+
+          <entry>
+            20
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/28
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Tested official Jack version on windows VM. Ardour won't start,
+            crash in jack when starting server.
+          </entry>
+
+          <entry>
+            20
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/28
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Responded to John Emmas's email about his additions to jack
+            server path in jack backend.
+          </entry>
+
+          <entry>
+            20
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/28
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Tested and Asked for feedback on bug
+            <ulink url="http://tracker.ardour.org/view.php?id=5921">5921</ulink>
+          </entry>
+
+          <entry>
+            10
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/28
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Tested and Confirmed bug
+            <ulink url="http://tracker.ardour.org/view.php?id=5851">5851</ulink>
+          </entry>
+
+          <entry>
+            10
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/28
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Rebased test-util branch onto cairocanvas
+          </entry>
+
+          <entry>
+            10
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/28
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Looked into decoupling AudioBackend from AudioEngine and
+            Session.
+          </entry>
+
+          <entry>
+            10
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/28
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Checked commit log and asked for feedback on bug
+            <ulink url="http://tracker.ardour.org/view.php?id=5918">5918</ulink>
+          </entry>
+
+          <entry>
+            5
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/5/28
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Wrote an appdata file for ardour3, validated it at
+            <ulink url="http://people.freedesktop.org/~hughsient/appdata/"></ulink>
+            and added it to bug
+            <ulink url="http://tracker.ardour.org/view.php?id=5940">5940</ulink>
+          </entry>
+
+          <entry>
+            20
+          </entry>
+        </row>
+
+      </tbody>
+    </tgroup>
+  </table>
+</section>
