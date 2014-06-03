@@ -132,21 +132,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Aubio as of version 0.4.1 has issues building with mingw with
-            jack enabled.
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Aubio version 0.4.1 needs wine to be able to run unit tests and
             build fails if not installed and able to execute tests. write
             patch to add option to optionally disable unit tests or just
@@ -166,6 +151,51 @@
           <entry namest="c2" nameend="c7">
             Investigate building Aubio with fftw support rather than inbuilt
             oura
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            More investigation of wdm/ks portaudio backend needed on windows
+            with real hardware
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Write patch for portaudio to build with current XP ksmedia.h
+            headers
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Write patch for mingw-w64 to add vista+ parts of ksmedia.h
+            headers etc to build with WaveRT support.
           </entry>
 
           <entry>

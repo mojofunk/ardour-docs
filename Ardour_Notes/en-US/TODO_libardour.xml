@@ -291,6 +291,85 @@
             None
           </entry>
         </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Remove now unneccessary AudioSource::find_broken_peakfile
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Decouple AudioBackend from AudioEngine and Session. Is it
+            possible to have no dependency on libardour at all? Perhaps with
+            AudioBackendListener interface passed to AudioBackend instead of
+            AudioEngine. Not sure how to have access to Session, perhaps
+            accessed through another interface or via set_data (string name,
+            void* data)
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Fix crash in libardour test_playlist_equivalent_regions
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Call AudioFileSource::set_build_peakfiles and
+            AudioFileSource::set_build_missing_peakfiles to true in
+            ARDOUR::init
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Change Session constructor situation. One constructor for new
+            sessions that take folder and name, etc and a second constructor
+            that takes a path to the session file for existing sessions.
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
       </tbody>
     </tgroup>
   </table>

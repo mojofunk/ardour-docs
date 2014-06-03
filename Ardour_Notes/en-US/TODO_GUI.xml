@@ -154,6 +154,36 @@
             None
           </entry>
         </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Refactor code in ARDOUR_UI::check_memory_locking into libpbd and
+            add unit test
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Make a Test Case for
+            <ulink url="http://tracker.ardour.org/view.php?id=5575">5575</ulink>
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
       </tbody>
     </tgroup>
   </table>
