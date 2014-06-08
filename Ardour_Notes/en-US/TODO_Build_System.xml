@@ -58,20 +58,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Update mingw packages to define native_pkg_name
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Continuous integration via jenkins/hudson etc?
           </entry>
 
@@ -187,7 +173,7 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            re-indent libs/backends/jack/wscript form 4 space indents to 8
+            re-indent python scripts to 4 spaces? or 8?
           </entry>
 
           <entry>
