@@ -87,36 +87,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            remove ALSA reference in libardour wscript
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            Fix Jack2 to quit properly if given -T flag, something about
-            counting internal clients deciding whether or not to exit(or at
-            least Paul said something like that)
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Aubio as of version 0.4.1 has issues building with mingw with
             jack enabled.
           </entry>
