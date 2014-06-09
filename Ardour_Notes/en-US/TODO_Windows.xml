@@ -58,20 +58,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Fix portaudio build to support API's other than directsound?
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             giomm interface keyword submit bug with patches upstream
           </entry>
 
@@ -156,20 +142,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Get John to move pbd/fallback_folders.h to msvc folder
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Get John to justify/remove msvc folder
           </entry>
 
@@ -200,20 +172,6 @@
 
           <entry namest="c2" nameend="c7">
             build with --windows-vst
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            Write test audio backend
           </entry>
 
           <entry>
@@ -285,20 +243,6 @@
           <entry namest="c2" nameend="c7">
             Use waf to substitute version/program name etc in nsi installer
             script
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            Get John to justify/remove msvc folder
           </entry>
 
           <entry>
