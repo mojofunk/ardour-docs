@@ -328,6 +328,20 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
+            Fix memleak in PBD::PathScanner, use regfree
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
             Docs for PBD::init/cleanup
           </entry>
 
@@ -431,6 +445,19 @@
 
           <entry namest="c2" nameend="c7">
             Remove call to Gio::Init in PBD::init?
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Use path_expand in SearchPath constructors/add_directory
           </entry>
 
           <entry>
