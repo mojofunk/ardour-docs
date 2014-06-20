@@ -162,7 +162,7 @@
 
           <entry namest="c2" nameend="c7">
             Refactor code in ARDOUR_UI::check_memory_locking into libpbd and
-            add unit test
+            add unit test. Add to PBD::get_resource_limit
           </entry>
 
           <entry>
@@ -555,7 +555,36 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
+            Update to new version of freesound API
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
             create libfreesound or similar lib and independant UI
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Have option for freesound files to be automatically downloaded
+            so preview is not so tedious
           </entry>
 
           <entry>

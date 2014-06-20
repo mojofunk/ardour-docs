@@ -444,6 +444,20 @@
             None
           </entry>
         </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Fixup ExportProfileManager::find_file and usage
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
       </tbody>
     </tgroup>
   </table>

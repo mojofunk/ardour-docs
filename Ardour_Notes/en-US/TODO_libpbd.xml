@@ -328,20 +328,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Fix memleak in PBD::PathScanner, use regfree
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Docs for PBD::init/cleanup
           </entry>
 
@@ -451,13 +437,99 @@
             None
           </entry>
         </row>
+
         <row>
           <entry>
             None
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Use path_expand in SearchPath constructors/add_directory
+            Use path_expand in SearchPath constructors/add_directory or
+            perhaps just add expand () method
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Move pbd/pathexpand.h to pbd/file_utils.h
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Move pbd/cleardir.h to pbd/file_utils.h
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Use g_open in PBD::copy_file
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Move pbd/error.h/cc to pbd.h/cc?
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            There are two copies of LocaleGuard in locale_guard.cc and
+            localeguard.cc, Add johns changes to locale_guard and remove
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+	  Should we set _fmode = O_BINARY or use newer _set_fmode in PBD::init for MSVC and MINGW
           </entry>
 
           <entry>
