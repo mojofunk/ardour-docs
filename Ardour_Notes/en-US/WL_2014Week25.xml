@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="chap-Documentation-Ardour_Notes-WL_2014Week25">
+  <title>2014 Week 25</title>
+  <table frame='all'>
+    <title>Bug Summary</title>
+    <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <thead>
+        <row>
+          <entry namest="c1" nameend="c5">
+            Bug Summary
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            Bugs Opened
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs Confirmed
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs Resolved
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs Closed
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs of interest
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <table frame='all'>
+    <title>Test Summary</title>
+    <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <thead>
+        <row>
+          <entry namest="c1" nameend="c5">
+            Test Summary
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            New Test Cases
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            <xref linkend="chap-Documentation-Ardour_Notes-Testing_Chapter-New_Session"/>
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            New Unit Tests
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>
+            libardour Unit tests
+          </entry>
+
+          <entry>
+            Platform
+          </entry>
+
+          <entry>
+            Passed
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            Test Failures
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Linux(Fedora 20)
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            One Process per test
+          </entry>
+
+          <entry>
+            Linux(Fedora 20)
+          </entry>
+
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            Didn't perform tests
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Windows 7
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            One Process per test
+          </entry>
+
+          <entry>
+            Windows 7
+          </entry>
+
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>
+            libpbd Unit tests
+          </entry>
+
+          <entry>
+            Platform
+          </entry>
+
+          <entry>
+            Passed
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            Test Failures
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Linux(Fedora 20)
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Windows 7
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <table frame='all'>
+    <title>Task Summary</title>
+    <tgroup cols='8' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <colspec colname='c6'/>
+      <colspec colname='c7'/>
+      <colspec colname='c8'/>
+      <thead>
+        <row>
+          <entry>
+            Date
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Task
+          </entry>
+
+          <entry>
+            Minutes
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            2014/6/16
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Refactor code from ARDOUR_UI into StatusBar class
+          </entry>
+
+          <entry>
+            120
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/6/16
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Try to test for strtok_s support in windows XP
+          </entry>
+
+          <entry>
+            10
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/6/17
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Refactored and Removed PathScanner in libpbd
+          </entry>
+
+          <entry>
+            180
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/6/18
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Refactored pbd/file_utils.h/cc
+          </entry>
+
+          <entry>
+            180
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/6/18
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Refactored pbd/clear_dir.h/cc
+          </entry>
+
+          <entry>
+            30
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/6/19
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Refactoring pbd/file_utils.h/cc
+          </entry>
+
+          <entry>
+            120
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/6/22
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Refactoring pbd/file_utils.h/cc
+          </entry>
+
+          <entry>
+            120
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+</section>
