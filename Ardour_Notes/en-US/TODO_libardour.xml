@@ -458,6 +458,21 @@
             None
           </entry>
         </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Add utility functions get_standard_sample_rates and
+            get_standard_buffer_sizes and use in at least the AudioBackends
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
       </tbody>
     </tgroup>
   </table>

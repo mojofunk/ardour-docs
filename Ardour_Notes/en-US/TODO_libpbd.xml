@@ -523,13 +523,15 @@
             None
           </entry>
         </row>
+
         <row>
           <entry>
             None
           </entry>
 
           <entry namest="c2" nameend="c7">
-	  Should we set _fmode = O_BINARY or use newer _set_fmode in PBD::init for MSVC and MINGW
+            Should we set _fmode = O_BINARY or use newer _set_fmode in
+            PBD::init for MSVC and MINGW
           </entry>
 
           <entry>
