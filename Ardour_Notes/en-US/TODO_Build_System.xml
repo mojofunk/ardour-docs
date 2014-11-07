@@ -58,7 +58,8 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Continuous integration via jenkins/hudson etc?
+            Support(Implement and Document) Native MinGW build on windows
+            via cygwin/MSYS2?
           </entry>
 
           <entry>
@@ -72,7 +73,8 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Support building using MinGW on windows via cygwin?
+            Support(Implement and Document) Native MSVC 2013 build on
+            windows?
           </entry>
 
           <entry>
@@ -86,36 +88,9 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            virt images for Fedora, Ubuntu/Debian, Windows xp, vista, 7 and
-            8?
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            build farm using virt images?
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            build branch on all arches when it is updated
+            Continous Integration using Buildbot with virt images for
+            Fedora, Ubuntu/Debian, Windows 7 and 8.1. Debug and Release
+            Builds, run tests, coverage, Packages, RPM's, Debs.
           </entry>
 
           <entry>

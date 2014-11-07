@@ -39,7 +39,7 @@
 
       <listitem>
         <para>
-          Close/Resolve 2 bugs no longer valid
+          Close/Resolve old and invalid bugs
         </para>
       </listitem>
 
@@ -112,6 +112,12 @@
       <listitem>
         <para>
           An official Windows release
+        </para>
+      </listitem>
+
+      <listitem>
+        <para>
+          Ardour Developer meetup/summit
         </para>
       </listitem>
     </itemizedlist>
