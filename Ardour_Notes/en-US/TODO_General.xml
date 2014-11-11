@@ -45,20 +45,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            join gtk+ irc channels
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             contact inkscape windows devs/packagers
           </entry>
 

@@ -299,35 +299,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Change PBD::Pathscanner to return strings instead of string
-            pointers
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            Change PBD::PathScanner to use glib regex
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Docs for PBD::init/cleanup
           </entry>
 
