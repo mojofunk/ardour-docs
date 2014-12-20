@@ -13,6 +13,12 @@ help::
 	@echo " all:"
 	@echo "     Generate HTML and PDF versions of the Documentation."
 	@echo
+	@echo " html:"
+	@echo "     Generate HTML versions of the Documentation."
+	@echo
+	@echo " pdf:"
+	@echo "     Generate PDF versions of the Documentation."
+	@echo
 	@echo " format:"
 	@echo "     Format DocBook XML source using xmlformat."
 	@echo
@@ -40,6 +46,12 @@ notes::notes-html notes-pdf
 
 guide::guide-html guide-pdf
 .PHONY : guide
+
+html::guide-html notes-html
+.PHONY : html
+
+pdf::notes-pdf guide-pdf
+.PHONY : pdf
 
 all:: notes guide
 .PHONY : all
