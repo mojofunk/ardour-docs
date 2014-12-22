@@ -198,6 +198,21 @@
             None
           </entry>
         </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Ask John to move all MSVC build files to libdir/msvc/vs8/ and
+            top level MSVC* directories to tools/MSVC/
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
       </tbody>
     </tgroup>
   </table>

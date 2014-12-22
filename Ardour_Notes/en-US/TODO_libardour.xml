@@ -282,7 +282,7 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Look at using boost::any instead of XMLNode for
+            Look into using native types instead of XMLNode for
             properties/state/etc, reimplement statesystem branch from old
             repo
           </entry>

@@ -634,6 +634,22 @@
             None
           </entry>
         </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Change Profile to use features rather than products.
+            Profile::get (USE_FEATURE) rather than get_mixbus() etc. should
+            Profile be merged with Configuration?
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
       </tbody>
     </tgroup>
   </table>
