@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="chap-Documentation-Ardour_Notes-WL_2014Week51">
+  <title>2014 Week 51</title>
+  <table frame='all'>
+    <title>Bug Summary</title>
+    <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <thead>
+        <row>
+          <entry namest="c1" nameend="c5">
+            Bug Summary
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            Bugs Opened
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs Confirmed
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs Resolved
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs Closed
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs of interest
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <table frame='all'>
+    <title>Test Summary</title>
+    <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <thead>
+        <row>
+          <entry namest="c1" nameend="c5">
+            Test Summary
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            New Test Cases
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            New Unit Tests
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>
+            libardour Unit tests
+          </entry>
+
+          <entry>
+            Platform
+          </entry>
+
+          <entry>
+            Passed
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            Test Failures
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Linux(Fedora 20)
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            One Process per test
+          </entry>
+
+          <entry>
+            Linux(Fedora 20)
+          </entry>
+
+          <entry>
+            30/30
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            All passed
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Windows 7
+          </entry>
+
+          <entry>
+            30/30
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            All Passed
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            One Process per test
+          </entry>
+
+          <entry>
+            Windows 7
+          </entry>
+
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>
+            libpbd Unit tests
+          </entry>
+
+          <entry>
+            Platform
+          </entry>
+
+          <entry>
+            Passed
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            Test Failures
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Linux(Fedora 20)
+          </entry>
+
+          <entry>
+            14/14
+          </entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Windows 7
+          </entry>
+
+          <entry>
+            11/14
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            Some filesystem path tests failing
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <table frame='all'>
+    <title>Task Summary</title>
+    <tgroup cols='8' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <colspec colname='c6'/>
+      <colspec colname='c7'/>
+      <colspec colname='c8'/>
+      <thead>
+        <row>
+          <entry>
+            Date
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Task
+          </entry>
+
+          <entry>
+            Minutes
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            2014/12/15
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Port gtkmm2ext to Gtkmm3
+          </entry>
+
+          <entry>
+            240 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/12/16
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Changes for ARDOUR_UI to compile with Gtkmm3
+          </entry>
+
+          <entry>
+            120 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/12/17
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Changes for ARDOUR_UI to compile with Gtkmm3
+          </entry>
+
+          <entry>
+            120 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/12/18
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Changes for ARDOUR_UI to compile with Gtkmm3
+          </entry>
+
+          <entry>
+            120 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/12/19
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Changes for ARDOUR_UI to compile with Gtkmm3
+          </entry>
+
+          <entry>
+            120 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/12/20
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Rebase timers branch and move timers into libpbd
+          </entry>
+
+          <entry>
+            120 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2014/12/21
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Write test basic test for PBD::Timers
+          </entry>
+
+          <entry>
+            60 minutes
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+</section>
