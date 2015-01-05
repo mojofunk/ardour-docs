@@ -369,6 +369,22 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
+            Look into a custom allocator for XMLNode* to cache nodes etc?,
+            I'm not sure it would matter if libxml is doing the string
+            allocations, needs looking into etc
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
             Investigate whether it is desirable to replace AbstractUI with
             something non-templated. How hard is it to remove all per thread
             event buffers/thread registration. Are there any hueristics that

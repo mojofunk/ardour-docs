@@ -650,6 +650,96 @@
             None
           </entry>
         </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Check instances where Gtk::Adjustment is created with ::new and
+            then Gtk::manage is used. Check if any of these instances are
+            added to top level containers.
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Refactor so VideoTimeline singleton isn't a member of ARDOUR_UI
+            class
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Access Mixer singleton through ARDOUR_UI or
+            UI::Mixer::instance() in another header
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Move UI::Configuration::get_only_copy_imported_files into
+            libardour RCConfig?
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Clocks should get there mode from UIConfiguration
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Rename ARDOUR_UI_UTILS namespace to just UI, when Gtkmm2ext::UI
+            class is renamed
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
       </tbody>
     </tgroup>
   </table>
