@@ -308,34 +308,6 @@
             240 minutes
           </entry>
         </row>
-
-        <row>
-          <entry>
-            2014/12/01
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            PBD::timers merged onto master, test and fix problem with clocks
-          </entry>
-
-          <entry>
-            60 minutes
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            2014/12/04
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            Work on reducing dependence on ardour_ui.h in GUI
-          </entry>
-
-          <entry>
-            120 minutes
-          </entry>
-        </row>
       </tbody>
     </tgroup>
   </table>
