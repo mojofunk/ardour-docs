@@ -285,6 +285,21 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
+            Use glib regex in PBD::find_files_matching_regex instead of
+            regex.h
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
             call canonical_path in PBD::path_expand instead of realpath
           </entry>
 
@@ -547,6 +562,62 @@
 
           <entry namest="c2" nameend="c7">
             Fix libpbd filesystem tests on windows
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Write test case for PBD::short_path, not portable ATM
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Move PBD::short_path into pbd/file_utils.h
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Move PBD::basename_nosuffix into pbd/file_utils.h
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Rename PBD::basename_nosuffix to basename_no_extension
           </entry>
 
           <entry>

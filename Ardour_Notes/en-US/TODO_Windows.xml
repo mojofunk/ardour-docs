@@ -241,8 +241,7 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Use waf to substitute version/program name etc in nsi installer
-            script
+            use nsis installer script from x-win, needs to be split
           </entry>
 
           <entry>

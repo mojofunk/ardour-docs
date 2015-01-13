@@ -191,21 +191,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Make UI::Timers class and add static timer signals from ArdourUI
-            class
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Move ArdourUI::TransportControllable to new header
           </entry>
 
@@ -734,6 +719,21 @@
           <entry namest="c2" nameend="c7">
             Rename ARDOUR_UI_UTILS namespace to just UI, when Gtkmm2ext::UI
             class is renamed
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Region boost gain should indicate how much gain is being boosted
+            or show a dialog/allow preview etc.
           </entry>
 
           <entry>
