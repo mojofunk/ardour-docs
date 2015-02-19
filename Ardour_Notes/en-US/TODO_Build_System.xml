@@ -148,7 +148,7 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            re-indent python scripts to 4 spaces? or 8?
+            re-indent python scripts to 4 spaces? PEP-8?
           </entry>
 
           <entry>
