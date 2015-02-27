@@ -187,6 +187,20 @@
             None
           </entry>
         </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Package gtk2-engines for MSYS2 for clearlooks
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
       </tbody>
     </tgroup>
   </table>

@@ -128,20 +128,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Package LV2 for MSYS2
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Get John to justify/remove msvc folder
           </entry>
 
@@ -242,6 +228,21 @@
 
           <entry namest="c2" nameend="c7">
             use nsis installer script from x-win, needs to be split
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Fix/Investigate two export folders in windows package in
+            share/ardour3
           </entry>
 
           <entry>

@@ -123,6 +123,20 @@
             None
           </entry>
         </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            prefix all tests with library name
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
       </tbody>
     </tgroup>
   </table>
