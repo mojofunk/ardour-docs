@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="sect-Documentation-Ardour_Notes-Testing_Chapter-Test_Systems">
+  <title>Test Systems</title>
+  <para>
+    These are some notes on the Test Systems used for Testing Ardour.
+  </para>
+
+  <para>
+    There needs to be at least one physical test system for each supported
+    platform, or a dual/triple boot configuration. The test systems should
+    not be used for development unless unavoidable.
+  </para>
+
+  <para>
+    For each supported platform their should be a test system that is
+    specified as the minimum supported system in terms of CPU speed, Memory
+    size, HDD speed and of course OS Version.
+  </para>
+</section>

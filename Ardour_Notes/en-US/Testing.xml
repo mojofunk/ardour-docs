@@ -10,7 +10,7 @@
   <para>
     These are some notes related to testing Ardour
   </para>
-
+  <xi:include href="Test_Systems.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <section id="sect-Documentation-Ardour_Notes-Testing_Chapter-Test_Cases">
     <title>Test Cases</title>
     <para>
