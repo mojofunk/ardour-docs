@@ -86,20 +86,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Package midifilters.lv2
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Package meters.lv2
           </entry>
 
@@ -144,20 +130,6 @@
           <entry namest="c2" nameend="c7">
             Investigate defining __USE_MINGW_ANSI_STDIO or _POSIX for mingw
             build
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            build with --windows-vst
           </entry>
 
           <entry>

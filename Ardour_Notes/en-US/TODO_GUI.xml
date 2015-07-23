@@ -59,7 +59,8 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Consolidate locations and range markers. Why both?
+            Consolidate locations and range markers. Explain what I mean by
+            this?
           </entry>
 
           <entry>
@@ -89,21 +90,6 @@
           <entry namest="c2" nameend="c7">
             rename ArdourWindow to SessionWindow or something as these
             windows depend on session
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            Should the first page of new/open page in startup dialog allow
-            direct double click access to existing sessions.
           </entry>
 
           <entry>

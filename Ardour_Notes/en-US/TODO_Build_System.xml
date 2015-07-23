@@ -44,7 +44,7 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            automatic code formatting
+            Write blog post on mingw-pkg in relation to Ardour
           </entry>
 
           <entry>
@@ -58,22 +58,7 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Support(Implement and Document) Native MinGW build on windows
-            via cygwin/MSYS2?
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            Support(Implement and Document) Native MSVC 2013 build on
+            Support(Implement and Document) Native MSVC 2013/2015 build on
             windows?
           </entry>
 
@@ -193,6 +178,20 @@
           <entry namest="c2" nameend="c7">
             Ask John to move all MSVC build files to libdir/msvc/vs8/ and
             top level MSVC* directories to tools/MSVC/
+          </entry>
+
+          <entry>
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            build midi++/pbd/ardour as one dll?
           </entry>
 
           <entry>

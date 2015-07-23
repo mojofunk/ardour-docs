@@ -73,20 +73,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            build midi++/pbd/ardour as one dll?
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Aubio as of version 0.4.1 has issues building with mingw with
             jack enabled.
           </entry>

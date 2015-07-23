@@ -45,20 +45,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Section on how to A/B two tracks with Exclusive solo
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Section on recommended Audio Interfaces, update
             <ulink url="https://community.ardour.org/realfaq#audioio">Ardour
             FAQ</ulink> and add to manual
@@ -75,22 +61,7 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Add non-insulting section to FAQ/Manual on how to start JACK in
-            realtime mode.
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            Add section on how to contribute to manual to the manual.
+            Add section on MIDI on Windows to manual
           </entry>
 
           <entry>
