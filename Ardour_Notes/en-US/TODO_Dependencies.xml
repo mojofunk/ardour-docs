@@ -149,36 +149,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Write patch for portaudio to build with current XP ksmedia.h
-            headers
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
-            Write patch for mingw-w64 to add vista+ parts of ksmedia.h
-            headers etc to build with WaveRT support.
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Investigate aligned malloc warning with rubberband when building
             with MSYS2/mingw.
           </entry>

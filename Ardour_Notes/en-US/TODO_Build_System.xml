@@ -104,20 +104,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            avoid subst ardev_common.sh.in every build
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             is VERSION used for anything at the top of gtk2_ardour/wscript
             build section?
           </entry>

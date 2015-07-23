@@ -73,20 +73,6 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            contact MSYS2 devs re waf and packgages
-          </entry>
-
-          <entry>
-            None
-          </entry>
-        </row>
-
-        <row>
-          <entry>
-            None
-          </entry>
-
-          <entry namest="c2" nameend="c7">
             Submit session_dir branch for pull request
           </entry>
 

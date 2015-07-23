@@ -86,7 +86,7 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Package LV2 midifilters
+            Package midifilters.lv2
           </entry>
 
           <entry>
@@ -100,7 +100,7 @@
           </entry>
 
           <entry namest="c2" nameend="c7">
-            Package LV2 meters
+            Package meters.lv2
           </entry>
 
           <entry>
