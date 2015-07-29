@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Ardour_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="chap-Documentation-Ardour_Notes-WL_2015Week30">
+  <title>2015 Week 30</title>
+  <table frame='all'>
+    <title>Bug Summary</title>
+    <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <thead>
+        <row>
+          <entry namest="c1" nameend="c5">
+            Bug Summary
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            Bugs Opened
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs Confirmed
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs Resolved
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs Closed
+          </entry>
+
+          <entry namest="c2" nameend="c5">
+            None
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            Bugs of interest
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <table frame='all'>
+    <title>Test Summary</title>
+    <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <thead>
+        <row>
+          <entry namest="c1" nameend="c5">
+            Test Summary
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            New Test Cases
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            New Unit Tests
+          </entry>
+
+          <entry namest="c2" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>
+            libardour Unit tests
+          </entry>
+
+          <entry>
+            Platform
+          </entry>
+
+          <entry>
+            Passed
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            Test Failures
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Linux(Fedora 20)
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            One Process per test
+          </entry>
+
+          <entry>
+            Linux(Fedora 20)
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Windows 7
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            One Process per test
+          </entry>
+
+          <entry>
+            Windows 7
+          </entry>
+
+          <entry>
+            None
+          </entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>
+            libpbd Unit tests
+          </entry>
+
+          <entry>
+            Platform
+          </entry>
+
+          <entry>
+            Passed
+          </entry>
+
+          <entry namest="c4" nameend="c5">
+            Test Failures
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Linux(Fedora 20)
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+
+        <row>
+          <entry>
+            All tests in one Process
+          </entry>
+
+          <entry>
+            Windows 7
+          </entry>
+
+          <entry></entry>
+
+          <entry namest="c4" nameend="c5"></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <table frame='all'>
+    <title>Task Summary</title>
+    <tgroup cols='8' align='left' colsep='1' rowsep='1'>
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <colspec colname='c6'/>
+      <colspec colname='c7'/>
+      <colspec colname='c8'/>
+      <thead>
+        <row>
+          <entry>
+            Date
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Task
+          </entry>
+
+          <entry>
+            Minutes
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            2015/7/20
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Started writing blog post on Ardour windows backend work
+          </entry>
+
+          <entry>
+            60 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2015/7/20
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Started work on adding ASIO specific portaudio API to portaudio
+            backend
+          </entry>
+
+          <entry>
+            60 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2015/7/21
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Change Portaudio backend to use DEBUG_TRACE for debug output
+            rather than fprintf
+          </entry>
+
+          <entry>
+            180 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2015/7/22
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Get ASIO control panel working for portaudio backend
+          </entry>
+
+          <entry>
+            60 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2015/7/23
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Write and add clang-format file to bug
+            <ulink url="http://tracker.ardour.org/view.php?id=6230">6230</ulink>
+          </entry>
+
+          <entry>
+            60 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2015/7/24
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Reviewed John Emmas' latest commits, talked with Robin about
+            them. Did some research on windows locale/filename issues.
+          </entry>
+
+          <entry>
+            60 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2015/7/24
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Wrote unit test comparing opening files with locate_from_utf8
+            and ::open or g_open to demonstrate failure with certain
+            filenames
+          </entry>
+
+          <entry>
+            120 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2015/7/24
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Research into libxml2 IO and expected filename encoding on
+            windows in relation to
+            <ulink url="https://github.com/Ardour/ardour/commit/cf5a8651d848fa5333e1c567286fc0eec2b0a0f7">cf5a86</ulink>
+            and passed on info in email to John and Robin
+          </entry>
+
+          <entry>
+            60 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2015/7/25
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Unit test to check that libxml2 expects utf-8 encoded file paths
+            on Windows. This was in relation reverting cf5a865 as it was
+            converting the string to the wrong encoding.
+          </entry>
+
+          <entry>
+            120 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2015/7/25
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Replace locale_from_utf8 and ::open in with g_open and push to
+            branch revert_locale_open. Reviewed and merged by Robin.
+          </entry>
+
+          <entry>
+            120 minutes
+          </entry>
+        </row>
+
+        <row>
+          <entry>
+            2015/7/26
+          </entry>
+
+          <entry namest="c2" nameend="c7">
+            Fix ARDOUR::touch_file to use g_open and move to libpbd
+          </entry>
+
+          <entry>
+            30 minutes
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+</section>

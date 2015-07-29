@@ -22,4 +22,5 @@
   <xi:include href="WL_2014Week52.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="WL_2015Week01.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="WL_2015Week02.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="WL_2015Week30.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 </chapter>
