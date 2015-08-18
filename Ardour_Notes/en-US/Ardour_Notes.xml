@@ -20,8 +20,6 @@
 
   <xi:include href="Code_Review.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-  <xi:include href="TODO.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-
   <xi:include href="Ardour_Live_Tools.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
   <xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
