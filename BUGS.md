@@ -8,8 +8,11 @@
 - [Crash when clicking in Editor with no Session #6337](http://tracker.ardour.org/view.php?id=6337)
 - [Can't remove custom click sound #6160](http://tracker.ardour.org/view.php?id=6160)
 - [Undo System issue, fade out #6158](http://tracker.ardour.org/view.php?id=6518)
+- [Freesound import broken #6493 #6197](http://tracker.ardour.org/view.php?id=6493)
 
 # MIDI
 
 - [Missing first note when midi region looped #5438](http://tracker.ardour.org/view.php?id=5438)
 - [MIDI note off issues #6340](http://tracker.ardour.org/view.php?id=6340)
+- [exported audio file(from MIDI Track) contains stuck notes](http://tracker.ardour.org/view.php?id=6492)
+- [MIDI Quantize unable to reproduce - to close](http://tracker.ardour.org/view.php?id=6479)
