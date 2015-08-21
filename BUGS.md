@@ -9,6 +9,7 @@
 - [Can't remove custom click sound #6160](http://tracker.ardour.org/view.php?id=6160)
 - [Undo System issue, fade out #6158](http://tracker.ardour.org/view.php?id=6518)
 - [Freesound import broken #6493 #6197](http://tracker.ardour.org/view.php?id=6493)
+- [keyboard split region while dragging crashes](http://tracker.ardour.org/view.php?id=6338)
 
 # MIDI
 
