@@ -399,7 +399,7 @@ Rename PBD::basename_nosuffix to filename_no_extension
 # Tests
 
 Add automated test execution for all supported compilers/platforms/build
-combinations using buildbot/other
+combinations using buildbot/ardour-build
 
 Tests need to be run for debug and release builds
 
@@ -427,5 +427,4 @@ somewhat randomly) saving session to see if there are any issues.
 
 Tests need to be run for debug and release builds
 
-Add automated test executions for all compilers/platforms/build combinations,
-run tests from ardour-build
+Test for large track count, loading/saving/closing success/times etc
