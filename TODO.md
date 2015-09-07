@@ -211,10 +211,6 @@ Fix/Investigate two export folders in windows package in share/ardour3
 
 # libardour
 
-Try to add utf-8 and utf-16/UCS strings to libardour test utils
-
-AudioEngine tests
-
 Test timestretch using different files, lengths etc.
 <ulink url="http://tracker.ardour.org/view.php?id=5923">Crash or
 distortion on timestretch</ulink>
@@ -394,10 +390,42 @@ and MINGW
 
 Remove inclusion of io.h in pbd/file_utils.cc if not needed
 
-Write test case for PBD::short_path, not portable ATM
-
 Move PBD::short_path into pbd/file_utils.h
 
 Move PBD::basename_nosuffix into pbd/file_utils.h
 
 Rename PBD::basename_nosuffix to filename_no_extension
+
+# Tests
+
+Add automated test execution for all supported compilers/platforms/build
+combinations using buildbot/other
+
+Tests need to be run for debug and release builds
+
+Test for Audio device sync/xrun at different settings with simulated load
+
+Test for disk/storage read and write speed, there is an existing test for this
+but not integrated into the testsuite. I'm not sure what would be considered
+failure though.
+
+Test for ability to write large files(> 4Gb)
+
+Try to add utf-8 and utf-16/UCS strings to libardour test utils
+
+AudioEngine/backend tests
+
+Write test case for PBD::short_path, not portable ATM
+
+Write to test to save session, then change various aspects of the session and
+undo and check that the session file is the same etc.
+
+Write a test for export, comparing against reference file
+
+Test a complex session with session with many plugins and periodically(but
+somewhat randomly) saving session to see if there are any issues.
+
+Tests need to be run for debug and release builds
+
+Add automated test executions for all compilers/platforms/build combinations,
+run tests from ardour-build
