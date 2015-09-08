@@ -10,6 +10,7 @@
 - [keyboard split region while dragging crashes](http://tracker.ardour.org/view.php?id=6338)
 - [Renaming session results in media missing](http://tracker.ardour.org/view.php?id=6557)
 - [Adding files with duplicate names via Dnd results in missing files](http://tracker.ardour.org/view.php?id=6558)
+- [Dragging canvas item to far right of canvas results in non-responsive UI](http://tracker.ardour.org/view.php?id=6556)
 
 # MIDI
 
