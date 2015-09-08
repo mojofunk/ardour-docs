@@ -409,7 +409,9 @@ Test for disk/storage read and write speed, there is an existing test for this
 but not integrated into the testsuite. I'm not sure what would be considered
 failure though.
 
-Test for ability to write large files(> 4Gb)
+Test for ability to write large files(> 4Gb), This could be achieved using
+dummy backend to generate data. The DummyBackend can run faster than realtime
+in order to speed this up.
 
 Try to add utf-8 and utf-16/UCS strings to libardour test utils
 
@@ -417,8 +419,8 @@ AudioEngine/backend tests
 
 Write test case for PBD::short_path, not portable ATM
 
-Write to test to save session, then change various aspects of the session and
-undo and check that the session file is the same etc.
+Write test to save session, then change various aspects of the session and undo
+and check that the session file is the same etc.
 
 Write a test for export, comparing against reference file
 
