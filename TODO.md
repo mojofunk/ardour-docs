@@ -57,6 +57,8 @@ Add section on MIDI on Windows to manual
 
 Add section on Audio on Windows to manual
 
+Add section on Windows default keybindings to manual
+
 # GUI
 
 Port to Gtk+3?
