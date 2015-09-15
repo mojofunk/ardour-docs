@@ -17,3 +17,10 @@
 - [Missing first note when midi region looped #5438](http://tracker.ardour.org/view.php?id=5438)
 - [MIDI note off issues #6340](http://tracker.ardour.org/view.php?id=6340)
 - [exported audio file(from MIDI Track) contains stuck notes](http://tracker.ardour.org/view.php?id=6492)
+
+# Editing
+
+- [Duplicate Range that spans multiple tracks can add extra regions in empty track](http://tracker.ardour.org/view.php?id=6579)
+- [Duplicate range selection will not work when selection begins in an empty area](http://tracker.ardour.org/view.php?id=4984)
+- [Duplicate range doesn't refers to multiple or trimmed regions](http://tracker.ardour.org/view.php?id=4986)
+- [Undo goes way back and works unpredictably. Ardour 4.2](http://tracker.ardour.org/view.php?id=6518)
