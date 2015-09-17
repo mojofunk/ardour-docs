@@ -402,6 +402,10 @@ Rename PBD::basename_nosuffix to filename_no_extension
 
 # Tests
 
+Add debug output debug bit for tests and use DEBUG_TRACE for test output, the
+test output should be clean by default but good to be able to define an
+environment variable for extra output
+
 Add automated test execution for all supported compilers/platforms/build
 combinations using buildbot/ardour-build
 
