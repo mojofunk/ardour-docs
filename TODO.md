@@ -26,6 +26,11 @@ Build midi++/pbd/ardour as one dll?
 
 --use-external-libs option needs reviewing or removing in wscript files
 
+portaudio build options for getting debug output from the library etc
+
+Test that installing Fedora debug rpm for mingw packages works. I think this
+might have been broken at some point.
+
 # Dependencies
 
 update Fedora mingw-cppunit package to at least be a version epoch whatever
@@ -40,9 +45,6 @@ not installed and able to execute tests. write patch to add option to
 optionally disable unit tests or just email author or check if fixed now.
 
 Investigate building Aubio with fftw support rather than inbuilt oura
-
-More investigation of wdm/ks/WASAPI portaudio backend needed on windows with
-real hardware
 
 Investigate aligned malloc warning with rubberband when building with MSYS2/mingw.
 
