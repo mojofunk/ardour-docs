@@ -1,3 +1,16 @@
+# Notes
+
+Place for bugs that are not yet in the tracker either because I'm offline, or I
+haven't had enough time to put it into the tracker, or find an existing bugs in
+the tracker.
+
+- Loop points should be Session length by default
+- Loop points should adjust to tempo changes/time signature
+- Regions/Events should adjust on Tempo changes/BBT based track option
+- Cut a region before peak but peak shows in waveform of cut region before peak
+- Adjust/Align region end with grid alignment
+- Shift click on a region gain control point should reset to 0dB
+
 # Windows
 
 - [Portaudio Backend #6495](http://tracker.ardour.org/view.php?id=6495)
@@ -11,6 +24,7 @@
 - [Renaming session results in media missing](http://tracker.ardour.org/view.php?id=6557)
 - [Adding files with duplicate names via Dnd results in missing files](http://tracker.ardour.org/view.php?id=6558)
 - [Dragging canvas item to far right of canvas results in non-responsive UI](http://tracker.ardour.org/view.php?id=6556)
+- [Audition audio without interrupting session playback](http://tracker.ardour.org/view.php?id=5337)
 
 # MIDI
 
