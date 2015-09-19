@@ -435,8 +435,6 @@ Write a test for export, comparing against reference file
 Test a complex session with session with many plugins and periodically(but
 somewhat randomly) saving session to see if there are any issues.
 
-Tests need to be run for debug and release builds
-
 Test for large track count, loading/saving/closing success/times etc
 
 Test for Session renaming
@@ -444,3 +442,7 @@ Test for Session renaming
 Test that randomly places all the plugins located on the system on a number of
 tracks and runs through a series of data, probably using dummy backend to
 generate test audio and midi data.
+
+Test for memory allocations from RT threads.
+
+Test for compatability with C99, C11, C++11 and C++14
