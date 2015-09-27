@@ -1,0 +1,29 @@
+# Smoke Tests
+
+A list of tests to be performed periodically as functional smoke tests. Some of
+these will come from the bug tracker and will be referenced but enough
+information should also be contained in this document in order to perform the
+tests.
+
+## Sessions
+
+- [Use an existing Session as template](http://tracker.ardour.org/view.php?id=5299)
+
+## Transport
+
+- [Reduced volume during fast playback/rewind](http://tracker.ardour.org/view.php?id=6583)
+
+## Editing
+
+- [keyboard split region while dragging crashes](http://tracker.ardour.org/view.php?id=6338)
+
+## Importing
+
+- [Ardour draws the same waveform for different files](http://tracker.ardour.org/view.php?id=5745)
+
+## Exporting
+
+## Preferences
+
+## Plugins
+

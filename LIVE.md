@@ -19,13 +19,19 @@ type effects.
 
 Create range selection and add automation points at snap-to setting?
 
-# Looping
+# Transport and Looping
 
 An important part of live performance is being able to easily manipulate loop
 points.
 
 Be able to audition while transport is rolling to control outs/headphones. Also
 being able to audition in sync to tempo bars/beats/
+
+# Samples and Instruments
+
+UI design that supports fast access to audio files/samples, instruments and
+supports drag and drop. Ableton live gets many things right in this area it
+seems...describe what they are.
 
 # Controllers
 

@@ -20,25 +20,31 @@ the tracker.
 
 # Sessions
 
-# Transport
+- [Renaming session results in media missing](http://tracker.ardour.org/view.php?id=6557)
 
-[Playback continues past loop end #6582](http://tracker.ardour.org/view.php?id=6582)
-[Looping works incorrectly with loop as mode enabled twice #6581](http://tracker.ardour.org/view.php?id=6581)
-[Latency compensation incorrect with plugins and
+# Transport and Recording
+
+- [Playback continues past loop end #6582](http://tracker.ardour.org/view.php?id=6582)
+- [Looping works incorrectly with loop as mode enabled twice #6581](http://tracker.ardour.org/view.php?id=6581)
+- [Latency compensation incorrect with plugins and
 looping/locate](http://tracker.ardour.org/view.php?id=5781)
 
 # Backends
 
-[ALSA backend unable to run realtime, when jack can #6585](http://tracker.ardour.org/view.php?id=6581)
+- [ALSA backend unable to run realtime, when jack can #6585](http://tracker.ardour.org/view.php?id=6581)
+
+# Importing
+
+- [Freesound import broken #6493 #6197](http://tracker.ardour.org/view.php?id=6493)
+
+# Exporting
 
 
 # General
 
 - [Can't audition when importing sound files for click #5599](http://tracker.ardour.org/view.php?id=5599)
 - [Can't remove custom click sound #6160](http://tracker.ardour.org/view.php?id=6160)
-- [Freesound import broken #6493 #6197](http://tracker.ardour.org/view.php?id=6493)
-- [keyboard split region while dragging crashes](http://tracker.ardour.org/view.php?id=6338)
-- [Renaming session results in media missing](http://tracker.ardour.org/view.php?id=6557)
+
 - [Adding files with duplicate names via Dnd results in missing files](http://tracker.ardour.org/view.php?id=6558)
 - [Dragging canvas item to far right of canvas results in non-responsive UI](http://tracker.ardour.org/view.php?id=6556)
 - [Audition audio without interrupting session playback](http://tracker.ardour.org/view.php?id=5337)
@@ -55,3 +61,5 @@ looping/locate](http://tracker.ardour.org/view.php?id=5781)
 - [Duplicate range selection will not work when selection begins in an empty area](http://tracker.ardour.org/view.php?id=4984)
 - [Duplicate range doesn't refers to multiple or trimmed regions](http://tracker.ardour.org/view.php?id=4986)
 - [Undo goes way back and works unpredictably. Ardour 4.2](http://tracker.ardour.org/view.php?id=6518)
+
+# Preferences
