@@ -11,13 +11,30 @@ the tracker.
 - Adjust/Align region end with grid alignment
 - Shift click on a region gain control point should reset to 0dB
 
+- reversing region should/could also reverse fades?
+
 # Windows
 
 - [Portaudio Backend #6495](http://tracker.ardour.org/view.php?id=6495)
 - [Windows plugin issues #6442](http://tracker.ardour.org/view.php?id=6442)
 
+# Sessions
+
+# Transport
+
+[Playback continues past loop end #6582](http://tracker.ardour.org/view.php?id=6582)
+[Looping works incorrectly with loop as mode enabled twice #6581](http://tracker.ardour.org/view.php?id=6581)
+[Latency compensation incorrect with plugins and
+looping/locate](http://tracker.ardour.org/view.php?id=5781)
+
+# Backends
+
+[ALSA backend unable to run realtime, when jack can #6585](http://tracker.ardour.org/view.php?id=6581)
+
+
 # General
 
+- [Can't audition when importing sound files for click #5599](http://tracker.ardour.org/view.php?id=5599)
 - [Can't remove custom click sound #6160](http://tracker.ardour.org/view.php?id=6160)
 - [Freesound import broken #6493 #6197](http://tracker.ardour.org/view.php?id=6493)
 - [keyboard split region while dragging crashes](http://tracker.ardour.org/view.php?id=6338)
