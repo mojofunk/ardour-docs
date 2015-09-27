@@ -85,7 +85,8 @@ Move ArdourUI::TransportControllable to new header
 
 Split Gtkmm2ext::UI into UI::RequestHandler and LogWindow
 
-Move `Gtkmm2ext::UI::get_color` to `UI::Utils::get_color` or remove it
+Move `Gtkmm2ext::UI::get_color` out of gtk_ui and into separate header and use
+in EditorRouteGroup and ThemeManager
 
 Move Gtkmm2ext::UI::Tooltips into UI::Application or remove
 
@@ -99,8 +100,6 @@ namespace
 Rename `Mixer_UI` to `UI::Mixer` or `UI::MixWindow`
 
 Create UI::EditorWindow class or UI::EditWindow
-
-Make `UI::TransportController` class and move related code from `ARDOUR_UI`
 
 Add `UI::get_copyright_string` from main.cc
 
@@ -187,6 +186,9 @@ Build Waves backend? Is it relevant anymore
 
 giomm interface keyword submit bug with patches upstream, check if this is
 still relevant
+
+Search/Discover lv2 in $PACKAGE_DIR/lib/lv2 in addition to
+$PACKAGE_DIR/lib/ardour4/LV2
 
 Package LV2 unreasonable synth
 
@@ -321,6 +323,10 @@ remove.
 
 move clock/timing code from PBD::file_manager to PBD::get_microseconds and test
 
+Abstract registering per thread pool so that a size doesn't need to be
+specified. Ultimately it shouldn't be necessary to register threads outside of
+libardour IMO but a GUI shouldn't need to worry about that detail.
+
 move SndfileManager out of PBD into libardour
 
 Write docs for PBD::EPA class and why it is necessary
@@ -415,7 +421,8 @@ Test for Audio device sync/xrun at different settings with simulated load
 
 Test for disk/storage read and write speed, there is an existing test for this
 but not integrated into the testsuite. I'm not sure what would be considered
-failure though.
+failure though. This needs to test multiple configurations, write only, read
+only, read and write using various counts, locations?
 
 Test for ability to write large files(> 4Gb), This could be achieved using
 dummy backend to generate data. The DummyBackend can run faster than realtime
