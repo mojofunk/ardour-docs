@@ -9,13 +9,19 @@ tests.
 
 - [Use an existing Session as template](http://tracker.ardour.org/view.php?id=5299)
 
-## Transport
+## Transport/Recording
 
 - [Reduced volume during fast playback/rewind](http://tracker.ardour.org/view.php?id=6583)
+- [Changing region layers doesn't playback raised region](http://tracker.ardour.org/view.php?id=6570)
+- [Error in latency compensation](http://tracker.ardour.org/view.php?id=5781)
 
 ## Editing
 
 - [keyboard split region while dragging crashes](http://tracker.ardour.org/view.php?id=6338)
+
+## Undo/Redo
+
+- [Crash when split while dragging region](http://tracker.ardour.org/view.php?id=6338)
 
 ## Importing
 
