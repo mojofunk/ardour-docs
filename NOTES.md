@@ -49,7 +49,7 @@ usage of existing functionality that I don't understand yet.
 
 - Shift click on a region gain control point should reset to 0dB
 
-- shift + '+' could zoom to selection(in addition to 'z'
+- shift + '+' could zoom to selection(in addition to 'z')
 
 - shift + '+' or '-' could increase/decrease track heights, the existing
   shortcut for zoom to session could change to ctrl/alt + '-' or

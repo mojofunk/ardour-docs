@@ -65,6 +65,8 @@ Add section on Windows default keybindings to manual
 
 Port to Gtk+3?
 
+Move `unload_session` from `ardour_ui_dialogs.cc` to `ardour_ui.cc`
+
 Disable remove loop and punch range in locations dialog
 
 rename ArdourWindow to SessionWindow or something as these windows depend on session
@@ -91,8 +93,6 @@ in EditorRouteGroup and ThemeManager
 Move Gtkmm2ext::UI::Tooltips into UI::Application or remove
 
 Move logic in verify `route_new_route_name()` into libardour, `is_valid_route_name()` etc
-
-`ARDOUR_UI::` has tooltips member, as does `Gtkmm2ext::UI`
 
 Make `UI::TransportController` class and move related code from `ARDOUR_UI`
 namespace
@@ -123,9 +123,9 @@ Preference Window seems to get stuck behind Editor window sometimes
 
 Remove gtk2_ardour/glade directory and contents
 
-Move ARDOUR_UI::config out of ARDOUR_UI class into separate header
+Done - Move ARDOUR_UI::config out of ARDOUR_UI class into separate header
 
-Move ARDOUR_UI::set_tip into separate header
+Done - Move ARDOUR_UI::set_tip into separate header
 
 When playhead passes Region name it can dissappear, seems like incorrect
 bounding box, check this and submit bug report if still relevant.
@@ -159,6 +159,9 @@ Refactor so VideoTimeline singleton isn't a member of ARDOUR_UI
 
 Access Mixer singleton through ARDOUR_UI or UI::Mixer::instance() in another
 header class
+
+Add an ARDOUR_DECLARE_LEAK_DETECTOR macro and use instance_count log domain to
+output instance counts
 
 Move UI::Configuration::get_only_copy_imported_files into libardour RCConfig?
 
@@ -216,19 +219,6 @@ maintained
 Fix/Investigate two export folders in windows package in share/ardour3
 
 # libardour
-
-Test timestretch using different files, lengths etc.
-<ulink url="http://tracker.ardour.org/view.php?id=5923">Crash or
-distortion on timestretch</ulink>
-
-Session test that programmaticaly creates a session and writes
-it to a directory that contains the arch/platform it was built
-on and the build identifier
-
-Automatic stress/stability testing of Audioengine/Session paths
-at various buffer sizes, samplerates etc. This will require some
-sort of simultaneous loading of system subsystems etc. perhaps
-via phoronix test integration
 
 move session directory names in libs/ardour/directory_names into
 SessionDirectory class?
@@ -318,10 +308,24 @@ to `*_extension`
 
 # libpbd
 
+Stateful::add_extra_xml takes a reference to an XMLNode that it takes ownership
+of when it should at least take a pointer.
+
+Stateful::add_instant_xml copies the node passed in, then copies the entire
+node and writes it disk. This makes ARDOUR_UI::save_ardour_state pretty
+inefficient with many copies and writes.
+
 Replace use of PBD::split and PBD::replace_all with boost equivalents and
 remove.
 
 move clock/timing code from PBD::file_manager to PBD::get_microseconds and test
+
+Make PBD::Timing into template to be able to use different clock sources
+
+Rename `Timing::get_interval` to elapsed()
+
+Add `elapsed_microseconds`, `elapsed_milliseconds` and `elapsed_seconds` to
+PBD::Timing class
 
 Abstract registering per thread pool so that a size doesn't need to be
 specified. Ultimately it shouldn't be necessary to register threads outside of
@@ -373,8 +377,8 @@ Test memory consumption of XMLNode
 Look into a custom allocator for XMLNode to cache nodes etc?, I'm not sure it
 would matter if libxml is doing the string allocations, needs looking into etc
 
-Look into a custom allocator for XMLNode to cache nodes etc?, I'm not sure it
-would matter if libxml is doing the string allocations, needs looking into etc
+Look for opportunities to use `boost::string_ref` xml parsing is a good
+candidate.
 
 Investigate whether it is desirable to replace AbstractUI with something
 non-templated. How hard is it to remove all per thread event buffers/thread
@@ -391,11 +395,11 @@ Move pbd/pathexpand.h to pbd/file_utils.h
 
 Move pbd/cleardir.h to pbd/file_utils.h
 
-Use g_open in PBD::copy_file
+Done - Use g_open in PBD::copy_file
 
 Move pbd/error.h/cc to pbd.h/cc?
 
-Should we set `_fmode = O_BINARY` or use newer `_set_fmode` in PBD::init for MSVC
+Done -Should we set `_fmode = O_BINARY` or use newer `_set_fmode` in PBD::init for MSVC
 and MINGW
 
 Remove inclusion of io.h in pbd/file_utils.cc if not needed
@@ -406,7 +410,24 @@ Move PBD::basename_nosuffix into pbd/file_utils.h
 
 Rename PBD::basename_nosuffix to filename_no_extension
 
+# Profiling
+
+profile audio file resampling, it seems very slow
+
 # Tests
+
+Test timestretch using different files, lengths etc.
+<ulink url="http://tracker.ardour.org/view.php?id=5923">Crash or
+distortion on timestretch</ulink>
+
+Session test that programmaticaly creates a session and writes
+it to a directory that contains the arch/platform it was built
+on and the build identifier
+
+Automatic stress/stability testing of Audioengine/Session paths
+at various buffer sizes, samplerates etc. This will require some
+sort of simultaneous loading of system subsystems etc. perhaps
+via phoronix test integration
 
 Add debug output debug bit for tests and use DEBUG_TRACE for test output, the
 test output should be clean by default but good to be able to define an
@@ -416,6 +437,10 @@ Add automated test execution for all supported compilers/platforms/build
 combinations using buildbot/ardour-build
 
 Tests need to be run for debug and release builds
+
+Add test for MidiPatchManager and use perf to look at xml parsing
+
+Add test for plugin/lv2/vst scanning.
 
 Test for Audio device sync/xrun at different settings with simulated load
 
@@ -452,6 +477,6 @@ probably using dummy backend to generate test audio and midi data.
 
 Test for memory allocations from RT threads.
 
-Test for compatability with C99, C11, C++11 and C++14
+Test for compatibility with C99, C11, C++11 and C++14
 
 Test that timestamp set in BWF file is properly recognized by other software.

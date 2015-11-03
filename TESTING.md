@@ -31,5 +31,7 @@ tests.
 
 ## Preferences
 
+- [Can't remove custom click sound #6160](http://tracker.ardour.org/view.php?id=6160)
+
 ## Plugins
 
