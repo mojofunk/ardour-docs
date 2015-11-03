@@ -6,6 +6,14 @@ a new bug.
 
 # Untracked
 
+- Middle click to bind controls should bring up a warning/info box if there is
+  no controller active, perhaps with a don't show this again checkbox.
+
+- Middle click to bind controller should have a timeout when no input is
+  recieved with a suggestion as to how to get it to work. It could suggest
+  going to midi tracer window and checking midi control input and could have an
+  option to go there etc.
+
 - Support for VST3 plugins
 
 - Cut a region before peak but peak shows in waveform of cut region before peak
@@ -56,13 +64,13 @@ a new bug.
 - When recording midi from a single channel the rec region displays data for
   all channels
 
-- we don't adjust for MIDI output latency in portaudio backend
+- Output latency is not adjusted for MIDI in portaudio backend
 
 - Midi ports are listed under 'other' in midi connections windows, I think they
   should be under 'hardware'
 
 - Disk space in info bar at top of editor window is sometimes red/invalid on
-  windows
+  windows(other platforms?)
 
 - If mouse edit point is set to mouse, zooming in will use mouse as zoom point,
   unless the mouse is outside the canvas in which case it uses playhead which
@@ -74,6 +82,39 @@ a new bug.
 - With follow playhead on the canvas should page before the playhead cursor
   gets to the edge of the canvas so can always see what events are about to be
   played.
+
+- Display of name highlight is broken when resizing tracks
+
+- Using draw tool it is possible move midi event past the end of the MRV and
+	canvas item isn't clipped by region view parent
+
+- No ALSA backend with default build? add 'auto' param to --with-backends
+  option?
+
+- Placing the Draw tool at the start of a midi region causes the midi note to
+  extend from the end of the region to the start of the session.
+
+- When notes are selected and the keyboard is used to move notes, and undo/redo
+  should not be created for each move, perhaps a timeout is needed.
+
+- Hide midi note when in draw mode and cursor is within another midi note.
+
+- Hard coded key commands for internal midi editing should be
+  configurable actions/key bindings.
+
+- Moving Midi notes should be constrained/clipped to region boundaries. It
+  appears like you can drag a note from one region to another when you can't.
+
+- Clicking on the close button in the window manager will cause ardour to exit
+	if the session state isn't "dirty". Closing the window may have been
+	accidental.
+
+- When adjusting the front of a midi region the ghost notes are not updated
+	correctly and will still be displayed even when the parent notes are not
+
+- Clicking on the end of a region to trim in Object "mode" without cursor
+	movement sometimes results in the start and end points of the region jumping
+	after the click point.
 
 # Windows
 
@@ -109,7 +150,6 @@ a new bug.
 # General
 
 - [Can't audition when importing sound files for click #5599](http://tracker.ardour.org/view.php?id=5599)
-- [Can't remove custom click sound #6160](http://tracker.ardour.org/view.php?id=6160)
 
 - [Adding files with duplicate names via Dnd results in missing files](http://tracker.ardour.org/view.php?id=6558)
 - [Dragging canvas item to far right of canvas results in non-responsive UI](http://tracker.ardour.org/view.php?id=6556)
