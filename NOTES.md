@@ -31,6 +31,10 @@ usage of existing functionality that I don't understand yet.
 
 - Is there an action to adjust/align region end with grid alignment
 
+- Why are there `load_session` and `load-session` executables in the
+	libs/ardour build dir? profiling related?
+
+
 # Ideas for changes to existing functionality or new functionality
 
 - Use number keys for tool selection?
@@ -62,3 +66,15 @@ usage of existing functionality that I don't understand yet.
 
 - If clicking in the timecode ruler engage zoom when moving the mouse up and
   down
+
+- When importing number of files the session is saved after each import, it
+	seems like it could just save the session file once at the end of import.
+
+- Duplicate options to duplicate at beat/bar boundaries
+
+- Quantize region/event selection
+
+- The Trim handles are activated too far from the end of the region, It seems
+	like it is about 10 pixels, should be about half of that. Should not have to
+	zoom in so much to move small regions. This is on Windows, must test if it is
+	the same on linux.

@@ -220,6 +220,18 @@ Fix/Investigate two export folders in windows package in share/ardour3
 
 # libardour
 
+Move Midnam document parsing into ARDOUR::init?
+
+Session::get_info_from_path is called to populate recent session dialog which
+involves parsing all the session xml files, measure perf impact
+
+Use new/delete and boost::scoped_ptr in EBUr128 class for exception safety etc
+and remove goto
+
+Remove use of goto in Session::save_state
+
+Use `PBD::copy_file` in Session::create
+
 move session directory names in libs/ardour/directory_names into
 SessionDirectory class?
 
@@ -420,14 +432,16 @@ Test timestretch using different files, lengths etc.
 <ulink url="http://tracker.ardour.org/view.php?id=5923">Crash or
 distortion on timestretch</ulink>
 
-Session test that programmaticaly creates a session and writes
-it to a directory that contains the arch/platform it was built
-on and the build identifier
+Session test that programmaticaly creates a session and writes it to a
+directory that contains the arch/platform it was built on and the build
+identifier
 
-Automatic stress/stability testing of Audioengine/Session paths
-at various buffer sizes, samplerates etc. This will require some
-sort of simultaneous loading of system subsystems etc. perhaps
-via phoronix test integration
+A test utility that loads a session in a random locale and re-saves it to check
+for string conversion/formatting not done in ascii/latin1
+
+Automatic stress/stability testing of Audioengine/Session paths at various
+buffer sizes, samplerates etc. This will require some sort of simultaneous
+loading of system subsystems etc. perhaps via phoronix test integration
 
 Add debug output debug bit for tests and use DEBUG_TRACE for test output, the
 test output should be clean by default but good to be able to define an

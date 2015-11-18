@@ -116,6 +116,16 @@ a new bug.
 	movement sometimes results in the start and end points of the region jumping
 	after the click point.
 
+- If I start recording to a track and then click record enable on another track
+	the red record rectangle will extend back to the record point of the first
+	track. I'm not sure if that is intentional or bug, it only records and
+	displays data after the point record was enabled.
+
+- When a track is record enabled it is not possible to change the track name
+	but there is no explanation/feedback
+
+- Region become unselected when reversing using alt+5(I think)
+
 # Windows
 
 - [Portaudio Backend #6495](http://tracker.ardour.org/view.php?id=6495)
