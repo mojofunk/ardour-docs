@@ -86,7 +86,7 @@ a new bug.
 - Display of name highlight is broken when resizing tracks
 
 - Using draw tool it is possible move midi event past the end of the MRV and
-	canvas item isn't clipped by region view parent
+  canvas item isn't clipped by region view parent
 
 - No ALSA backend with default build? add 'auto' param to --with-backends
   option?
@@ -106,25 +106,27 @@ a new bug.
   appears like you can drag a note from one region to another when you can't.
 
 - Clicking on the close button in the window manager will cause ardour to exit
-	if the session state isn't "dirty". Closing the window may have been
-	accidental.
+  if the session state isn't "dirty". Closing the window may have been
+  accidental.
 
 - When adjusting the front of a midi region the ghost notes are not updated
-	correctly and will still be displayed even when the parent notes are not
+  correctly and will still be displayed even when the parent notes are not
 
 - Clicking on the end of a region to trim in Object "mode" without cursor
-	movement sometimes results in the start and end points of the region jumping
-	after the click point.
+  movement sometimes results in the start and end points of the region jumping
+  after the click point.
 
 - If I start recording to a track and then click record enable on another track
-	the red record rectangle will extend back to the record point of the first
-	track. I'm not sure if that is intentional or bug, it only records and
-	displays data after the point record was enabled.
+  the red record rectangle will extend back to the record point of the first
+  track. I'm not sure if that is intentional or bug, it only records and
+  displays data after the point record was enabled.
 
 - When a track is record enabled it is not possible to change the track name
-	but there is no explanation/feedback
+  but there is no explanation/feedback
 
 - Region become unselected when reversing using alt+5(I think)
+
+- Measuring latency with larger spb/fpp values like 4096 returns negative systemic latency
 
 # Windows
 
