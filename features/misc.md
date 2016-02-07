@@ -1,41 +1,6 @@
-These are just some notes relating to usage of Ardour. There are may be some
-ideas related to changing existing functionality, missing functionality or just
-usage of existing functionality that I don't understand yet.
-
-# Questions
+# Misc Features
 
 - drag handle + modifier to duplicate a region, cubase uses alt.
-
-- how to Replace selected regions with another region?
-
-- Alt + s toggles solo for selected tracks, Alt + m should toggle mutes,
-  although that is currently bound to toggling the mixer.
-
-- Are there key bindings for deactivate all mutes/solos?
-
-- Deactivate all mutes button/action
-
-- Are there existing actions are bound to shift/ctrl/alt middle click. Some
-  possible options for actions:
-  - middle click for paste X style
-  - middle click and drag to scroll
-  - middle click + modifier for zoom to session?
-
-- Is portaudio output latency correctly reported considering buffering
-
-- Does Midi -> Reverse doesn't work?
-
-- How to copy MIDI notes?
-
-- Regions/Events should adjust on Tempo changes/BBT based track option
-
-- Is there an action to adjust/align region end with grid alignment
-
-- Why are there `load_session` and `load-session` executables in the
-	libs/ardour build dir? profiling related?
-
-
-# Ideas for changes to existing functionality or new functionality
 
 - Use number keys for tool selection?
 
@@ -78,3 +43,36 @@ usage of existing functionality that I don't understand yet.
 	like it is about 10 pixels, should be about half of that. Should not have to
 	zoom in so much to move small regions. This is on Windows, must test if it is
 	the same on linux.
+
+- shortcuts to step up/down the grid settings
+
+- When plugins are rescanned the instrument combo should be refreshed in Add
+	new track dialog
+
+- Use G and H for zoom in/out
+
+- Vertical Track zoom to display all midi notes in a region
+
+- Copy midi notes by modifier and drag?
+
+- Fit all tracks vertical key binding. Can be done with Ctrl+'t' then 'f'  
+
+- Constrain moving midi notes in x and y directions
+
+- Automation points should be added while the mouse is pressed, not on release
+
+- Global Mute indicator and disable button
+
+- Different drawing modes for automation data, Cubase has: line, parabola,
+	sine, triangle, square, paint
+
+- Double click and drag in draw mode acts like a brush inserting notes at grid
+	intervals
+
+- Add key binding to loop region
+
+- Add midi step editor to track context menu
+
+- Midi draw cursor seems like it should be reversed and could use visual
+	improvements
+

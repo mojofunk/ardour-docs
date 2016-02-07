@@ -2,6 +2,10 @@
 
 Support(Implement and Document) Native MSVC 2013/2015 build on windows?
 
+Use compiler checks to define target platform
+
+Define compiler and target platform in pbd headers based on compiler defines
+
 Continous Integration using Buildbot with virt images for Fedora,
 Ubuntu/Debian, Windows 7 and 8.1. Debug and Release Builds, run tests,
 coverage, Packages, RPM's, Debs.
@@ -11,8 +15,6 @@ is VERSION used for anything at the top of gtk2_ardour/wscript build section?
 Add script/s to ardour-build-scripts to test all build configurations
 
 re-indent python scripts to 4 spaces? PEP-8 checker/formatter script?
-            
-target to build doxygen docs
             
 There are two Doxygen files ardour.dox and docs/Doxyfile. remove one and add
 target to build system to build the other.
@@ -26,7 +28,7 @@ Build midi++/pbd/ardour as one dll?
 
 --use-external-libs option needs reviewing or removing in wscript files
 
-portaudio build options for getting debug output from the library etc
+Done - portaudio build options for getting debug output from the library etc
 
 Test that installing Fedora debug rpm for mingw packages works. I think this
 might have been broken at some point.
@@ -64,6 +66,9 @@ Add section on Windows default keybindings to manual
 # GUI
 
 Port to Gtk+3?
+
+make Midi Device Setup button in AudioSetup dialog insensitive when engine
+running
 
 Move `unload_session` from `ardour_ui_dialogs.cc` to `ardour_ui.cc`
 
@@ -245,10 +250,6 @@ needs to be called after audio engine is valid etc.
 
 rename libardour/globals.cc, most of the functions in it are
 declared in ardour/ardour.h
-
-MidiPatchManager::set_session is called when loading session
-which seems to take a while, is it possible to call this after
-Session is loaded during idle.
 
 Move ARDOUR::touch_file into PBD::? only used by sfdb which we
 don't use

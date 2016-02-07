@@ -1,0 +1,70 @@
+Adding file with the same name results in missing files after reopening the
+session
+
+Why is _channel a member of FileSource?
+
+Why does AudioFileSource::get_state store _channel and _origin when they are
+not its members but calls FileSource::set_state to restore them.
+
+#0  0xffffffff in ARDOUR::AudioFileSource::AudioFileSource(ARDOUR::Session&,
+XMLNode const&, bool) (this=0xa457010, __vtt_parm=0xb7c32764 <VTT for
+ARDOUR::SndFileSource+4>, s=..., node=..., must_exist=true,
+__in_chrg=<optimized out>) at ../libs/ardour/audiofilesource.cc:144
+#1  0xffffffff in ARDOUR::SndFileSource::SndFileSource(ARDOUR::Session&,
+XMLNode const&) (this=0xa457010, s=..., node=..., __in_chrg=<optimized out>,
+__vtt_parm=<optimized out>)
+    at ../libs/ardour/sndfilesource.cc:68
+#2  0xffffffff in ARDOUR::SourceFactory::create(ARDOUR::Session&, XMLNode
+		const&, bool) (s=..., node=..., defer_peaks=true) at
+		../libs/ardour/source_factory.cc:185
+#3  0xffffffff in ARDOUR::Session::XMLSourceFactory(XMLNode const&)
+		(this=0x9721a38, node=...) at ../libs/ardour/session_state.cc:2099
+#4  0xffffffff in ARDOUR::Session::load_sources(XMLNode const&)
+		(this=0x9721a38, node=...) at ../libs/ardour/session_state.cc:2012
+#5  0xffffffff in ARDOUR::Session::set_state(XMLNode const&, int)
+		(this=0x9721a38, node=..., version=3001) at
+		../libs/ardour/session_state.cc:1345
+#6  0xffffffff in ARDOUR::Session::post_engine_init() (this=0x9721a38) at
+		../libs/ardour/session_state.cc:268
+#7  0xffffffff in ARDOUR::Session::Session(ARDOUR::AudioEngine&, std::string
+		const&, std::string const&, ARDOUR::BusProfile*, std::string)
+(this=0x9721a38, eng=...,
+fullpath="/home/timbyr/ardour-test-sessions/test-5745-3",
+snapshot_name="test-5745-3", bus_profile=0x0,
+mix_template="\234\350\371\264\004\225\343\266\070\336\377\277\000\320z\266\000\000\000\000Ƅմ\260\362i\266\264kC\t\000\000\000\000\270\341ŷ
+\260^\262\001\000\000\000\005\000\000\000\000\000\000\000\000p\371\264`_\376\267\224\357\377\267\000\000\000\000\217\002\024\b\344\255\354\266\005\000\000\000\260\372\377\267\000\000\000\000\001\000\000\000\310\357\352\264\000\000\000\000Z<\366\264+\255\376\267\000p÷x\021&\b\037\017\366\264\324+C\t;\000\000\000\v\000\000\000\335\016\366\264\000p÷x\021&\b\000\000\000\000\000\065\320\035\000@\207\266x\021&\b\000\000\000\000\377\377\377\377\264kC\t\024\000\000\000\\:;\000\000\060\347\267x\021&\b\000\000\000\000\070\336\377\277"...)
+at ../libs/ardour/session.cc:377
+#8  0x08262a3b in ARDOUR_UI::load_session(std::string const&, std::string
+const&, std::string) (this=0x91a6018,
+path="/home/timbyr/ardour-test-sessions/test-5745-3", snap_name="test-5745-3",
+mix_template="")
+    at ../gtk2_ardour/ardour_ui.cc:3193
+#9  0x08262364 in ARDOUR_UI::get_session_parameters(bool, bool, std::string)
+		(this=0x91a6018, quit_on_cancel=false, should_be_new=false,
+		load_template="") at ../gtk2_ardour/ardour_ui.cc:3122
+#10 0x082593f6 in ARDOUR_UI::starting() (this=0x91a6018) at
+		../gtk2_ardour/ardour_ui.cc:1015
+#11 0xffffffff in Gtkmm2ext::UI::run(Receiver&) (this=0x91a6018,
+		old_receiver=...) at ../libs/gtkmm2ext/gtk_ui.cc:279
+#12 0x085fa343 in main(int, char**) (argc=1, argv=0xbfffe284) at
+		../gtk2_ardour/main.cc:396
+
+Importing external files adds the directory to the search path, why? It
+shouldn't need to if an absolute path is stored
+
+Why does FileSource need a within_session member. If the "origin" member is
+non-empty it indicates an external file source?
+
+When and why does FileSource::set_path set _origin to a relative path
+
+When a file is imported into ardour either via drag and drop or via the import dialog with the "copy to session" option unchecked it uses the AudioFileSource constructor for external-to-session files(~audiofilesource.cc:93) which sets the FileSource::_origin member to an absolute path to the external file and it also adds the directory that contained the file to the audio-searth-path session property
+
+When the session is reloaded it uses the AudioFileSource constructor for internal-to-session(comment is innaccurate) files(~audiofilesource.cc:135) called via SourceFactory::create(). At that point the _path member contains the name of the external file ("name" property in the session XML) which is used along with the directories contained in the audio-search-path to find the file via FileSource::find().
+
+This means that if there are two directories that contain a file with the same name the Ambiguous File dialog is shown.
+
+One solution to this could be to use the path contained in the FileSource::_origin member to set FileSource::_path before calling FileSource::init so that FileSource::find does not try and find the file and just uses the path provided.
+
+It has been suggested that the FileSource::_origin property is intended to be used for time stretch when re-stretching files so that there is not a cumulative degradation in audio quality. In which case perhaps an absolute path should be stored in the Source XML node as another property for external files.
+
+Another option would be to store a hash for files to determine equivalence and keep the find via audio-search-path+name+hash but that seems overly complicated and unnecessary for this use case(although it may be useful to find files in other circumstances)

@@ -1,10 +1,8 @@
-# Notes
+# Untracked
 
-Place for bugs that are not yet in the tracker either because I'm offline, or I
+A Place for bugs that are not yet in the tracker either because I'm offline, or I
 haven't had enough time to look for existing bugs in the tracker or enter it as
 a new bug.
-
-# Untracked
 
 - Middle click to bind controls should bring up a warning/info box if there is
   no controller active, perhaps with a don't show this again checkbox.
@@ -97,8 +95,6 @@ a new bug.
 - When notes are selected and the keyboard is used to move notes, and undo/redo
   should not be created for each move, perhaps a timeout is needed.
 
-- Hide midi note when in draw mode and cursor is within another midi note.
-
 - Hard coded key commands for internal midi editing should be
   configurable actions/key bindings.
 
@@ -124,63 +120,50 @@ a new bug.
 - When a track is record enabled it is not possible to change the track name
   but there is no explanation/feedback
 
-- Region become unselected when reversing using alt+5(I think)
+- Region becomes unselected when reversing using alt+5(I think)
 
-- Measuring latency with larger spb/fpp values like 4096 returns negative systemic latency
+- Measuring latency with larger spb/fpp values like 4096 returns negative
+  systemic latency
 
-# Windows
+- When dragging a midi region down into empty track area a new midi track is
+  created with only a single midi input and output port. Perhaps the track
+  should be created with the same track type as the region being dragged from?
+  but then what to do when dragging a region selection that spans more than a
+  single track.
 
-- [Portaudio Backend #6495](http://tracker.ardour.org/view.php?id=6495)
-- [Windows plugin issues #6442](http://tracker.ardour.org/view.php?id=6442)
+- Crash when starting ALSA backend with midi device active. then stop driver,
+  disable device, restart driver and show midi connections -> crash. Same for
+  portaudio backend. Similarly issue when enabling midi devices, they will not
+  be displayed in the midi connections window.
 
-# Sessions
+- With portaudio backend `midi_devices` member of EngineControl gets reset by
+  maybe_display_state... between enumerating the midi devices and redisplaying
+  the midi devices which means the devices will not be shown correctly in
+  midi tab/page unless switching midi drivers or a valid state already exists.
 
-- [Renaming session results in media missing](http://tracker.ardour.org/view.php?id=6557)
+- Midi note end trim tool should appear based on a fixed number of pixels not
+  on a proportion of the note length
 
-# Transport and Recording
+- Trim tool on midi region should always show trim tool icon with two arrows as
+  the midi region can always be extended or trimmed.
 
-- [Playback continues past loop end #6582](http://tracker.ardour.org/view.php?id=6582)
-- [Looping works incorrectly with loop as mode enabled twice #6581](http://tracker.ardour.org/view.php?id=6581)
-- [Latency compensation incorrect with plugins and looping/locate](http://tracker.ardour.org/view.php?id=5781)
-- [When recording in a loop some audio is not captured](http://tracker.ardour.org/view.php?id=6569)
+- Select midi events in region1, select midi events in region 2, create midi
+  region, undo will now remove new region and selection. Redo will not restore
+  second midi region selection.
 
-# Backends
+- Deleting selected midi notes only operates on the last region to have notes
+  selected
 
-- [ALSA backend unable to run realtime, when jack can #6585](http://tracker.ardour.org/view.php?id=6581)
+- When importing the "copy files to session" check box is reset for each file
+  selected
 
-# Importing
+- Session search paths are not stored in a portable fashion
 
-- [Freesound import broken #6493 #6197](http://tracker.ardour.org/view.php?id=6493)
+- Tracks added while transport rolling are not played back
 
-# Exporting
+- Ctrl + 't' to select all tracks and the 'F' to fit selected tracks causes
+	canvas drawing issues at bottom of track area
 
-# Undo/Redo
+- Drag and drop plugin from one track to another in mixer causes segv, may be
+	windows specific.
 
-- [Crash if two undo operations are performed at same time](http://tracker.ardour.org/view.php?id=6602)
-- [Undo should be disabled during recording](http://tracker.ardour.org/view.php?id=6540)
-
-# General
-
-- [Can't audition when importing sound files for click #5599](http://tracker.ardour.org/view.php?id=5599)
-
-- [Adding files with duplicate names via Dnd results in missing files](http://tracker.ardour.org/view.php?id=6558)
-- [Dragging canvas item to far right of canvas results in non-responsive UI](http://tracker.ardour.org/view.php?id=6556)
-- [Audition audio without interrupting session playback](http://tracker.ardour.org/view.php?id=5337)
-
-# MIDI
-
-- [Missing first note when midi region looped #5438](http://tracker.ardour.org/view.php?id=5438)
-- [MIDI note off issues #6340](http://tracker.ardour.org/view.php?id=6340)
-- [exported audio file(from MIDI Track) contains stuck notes](http://tracker.ardour.org/view.php?id=6492)
-- [MIDI Loop triggers the first note of the bar AFTER the loop end](http://tracker.ardour.org/view.php?id=6389)
-
-# Editing
-
-- [Black region outline ugly with many small regions](http://tracker.ardour.org/view.php?id=6615)
-- [Region names are hard to read](http://tracker.ardour.org/view.php?id=5824)
-- [Duplicate Range that spans multiple tracks can add extra regions in empty track](http://tracker.ardour.org/view.php?id=6579)
-- [Duplicate range selection will not work when selection begins in an empty area](http://tracker.ardour.org/view.php?id=4984)
-- [Duplicate range doesn't refers to multiple or trimmed regions](http://tracker.ardour.org/view.php?id=4986)
-- [Undo goes way back and works unpredictably. Ardour 4.2](http://tracker.ardour.org/view.php?id=6518)
-
-# Preferences
