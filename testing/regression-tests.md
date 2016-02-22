@@ -8,26 +8,38 @@ tests.
 # Sessions
 
 - [Use an existing Session as template](http://tracker.ardour.org/view.php?id=5299)
+- [Crash when creating new session while there is currently opened other session](http://tracker.ardour.org/view.php?id=6766)
+- [Renaming the session root folder results in all media items missing](http://tracker.ardour.org/view.php?id=6557)
 
 # Transport/Recording
 
 - [Reduced volume during fast playback/rewind](http://tracker.ardour.org/view.php?id=6583)
 - [Changing region layers doesn't playback raised region](http://tracker.ardour.org/view.php?id=6570)
 - [Error in latency compensation](http://tracker.ardour.org/view.php?id=5781)
+- [When recording in a loop, some audio is not captured]http://tracker.ardour.org/view.php?id=5781)
 
 # Mixer
 
+- [Crash when clicking the Mono button in the Monitor section in the Mixer](http://tracker.ardour.org/view.php?id=6758)
+- [PFL sometimes produces SIP/AFL audio](http://tracker.ardour.org/view.php?id=5803)
+
 # Editor
 
-# MIDI
-
-- [keyboard split region while dragging crashes](http://tracker.ardour.org/view.php?id=6338)
+- [Splitted audio regions jump to the beginning of timeline and build layers on session tempo change](http://tracker.ardour.org/view.php?id=5781)
 - [Black region outline ugly with many small regions](http://tracker.ardour.org/view.php?id=6615)
 - [Duplicate Range that spans multiple tracks can add extra regions in empty track](http://tracker.ardour.org/view.php?id=6579)
 - [Duplicate range selection will not work when selection begins in an empty area](http://tracker.ardour.org/view.php?id=4984)
 - [Duplicate range doesn't refers to multiple or trimmed regions](http://tracker.ardour.org/view.php?id=4986)
+- [keyboard split region while dragging crashes](http://tracker.ardour.org/view.php?id=6338)
+
+# MIDI
 
 - [MIDI Quantize doesn't work](http://tracker.ardour.org/view.php?id=5545)
+
+# Control Surfaces
+
+- [All midi bindings lost when one track removed](http://tracker.ardour.org/view.php?id=5633)
+- [Crash on selecting 'Behringer X-Touch Compact' mackie control surface type](http://tracker.ardour.org/view.php?id=6764)
 
 # Undo/Redo
 

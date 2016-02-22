@@ -39,6 +39,7 @@
 
 # MIDI
 
+- [MIDI Mixer faders should be volume and not velocity multiplier](http://tracker.ardour.org/view.php?id=6040)
 - [Missing first note when midi region looped #5438](http://tracker.ardour.org/view.php?id=5438)
 - [MIDI note off issues #6340](http://tracker.ardour.org/view.php?id=6340)
 - [exported audio file(from MIDI Track) contains stuck notes](http://tracker.ardour.org/view.php?id=6492)

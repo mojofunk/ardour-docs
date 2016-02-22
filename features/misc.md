@@ -76,3 +76,5 @@
 - Midi draw cursor seems like it should be reversed and could use visual
 	improvements
 
+- Need a button in the editor to turn off follow playhead
+

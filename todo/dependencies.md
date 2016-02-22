@@ -3,6 +3,8 @@ greater than fedora mingw package
 
 Update Fedora mingw packages to define native_pkg_name
 
+Update FFTW3 to version >= 3.5? to get fix for plannar threading
+
 Aubio as of version 0.4.1 has issues building with mingw with jack enabled.
 
 Aubio version 0.4.1 needs wine to be able to run unit tests and build fails if

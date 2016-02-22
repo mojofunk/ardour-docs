@@ -33,11 +33,6 @@ a new bug.
 - When switching to note edit mode the range selection rectangle doesn't get
   hidden. Is there a purpose or a bug?
 
-- Snap modifier doesn't work for MIDI notes when snap set to 'No Grid'
-  When moving or adjusting the start/end of midi note with the snap to set to
-  'No Grid', using the snap modifier doesn't turn snap on as it does for
-  regions.
-
 - Able to open recent session when engine stopped
 
 - Should Xrun markers be movable?
@@ -61,11 +56,6 @@ a new bug.
 
 - When recording midi from a single channel the rec region displays data for
   all channels
-
-- Output latency is not adjusted for MIDI in portaudio backend
-
-- Midi ports are listed under 'other' in midi connections windows, I think they
-  should be under 'hardware'
 
 - Disk space in info bar at top of editor window is sometimes red/invalid on
   windows(other platforms?)
@@ -167,3 +157,35 @@ a new bug.
 - Drag and drop plugin from one track to another in mixer causes segv, may be
 	windows specific.
 
+- Removal of Nomad Factory BusDriver plugin causes segv(Windows 32-bit), not
+	sure if the issue is specific to this plugin
+
+- On windows the Ardour session files do not have an associated icon(it looks
+	like a default one)
+
+- When play midi notes as they are selected is enabled, loading a session
+	causes midi notes to be played, rather than just when they are selected.
+
+- Changing track color doesn't work if part of a group. When right clicking on
+	a track header and selecting color if tracks are in group, the group color
+	overrides the track color. This is fine I guess but not very obvious and made
+	me think it was a bug, perhaps it should warn the user that changing the
+	track color will have no affect as it is part of a group or just display a
+	dialog that asks "This track is part of a group and while the track is part
+	of a group the group color will override the track color, Do you want to
+	change the color for the group? Yes/No
+
+- On Windows if the audio engine is started and then I change for instance the
+	samplerate setting in the RME config window, then it causes the application
+	to freeze/crash.
+
+- In the new track dialog when entering a name, hitting enter should accept
+	the name close the dialog(create tracks), currently it does nothing.
+
+- When Session Setup or Audio Setup windows are present the Gnome 3 window
+	manager won't tab to other applications. Window type/hint issue?
+
+- Insert/Remove time dialog does not specify where the time will be inserted
+
+- The name of the mode of the clock should be displayed in Insert/Remove time
+	dialogs

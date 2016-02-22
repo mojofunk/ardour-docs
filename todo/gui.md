@@ -105,6 +105,9 @@ Move UI::Configuration::get_only_copy_imported_files into libardour RCConfig?
 
 Clocks should get there mode from UIConfiguration
 
+Write `UI::get_color` and `UI::get_color_with_mod` functions instead of
+UIConfiguration::instance().color
+
 Rename ARDOUR_UI_UTILS namespace to just UI, when Gtkmm2ext::UI class is
 renamed
 
@@ -113,17 +116,18 @@ dialog/allow preview etc.
 
 # General
 
+Show splash screen at application start and do a plugin scan at that point
+rather than on session load
+
 Write guide to using bug tracker. How to report bug, Using bug fields(severity,
 status etc)
 
-Get OSX system to build and test on.
+Setup build on OSX
 
 prefix all tests with library name. So the namespaces don't clash? can't
 remember exactly why I wrote this item.
 
 # Windows
-
-Build Waves backend? Is it relevant anymore
 
 giomm interface keyword submit bug with patches upstream, check if this is
 still relevant
@@ -139,7 +143,7 @@ Package meters.lv2
 
 Package LV2 mda
 
-Get John to justify/remove msvc folder
+Get John to justify/move/remove msvc folders
 
 Investigate defining `__USE_MINGW_ANSI_STDIO`  or `_POSIX` for mingw build
 
@@ -147,12 +151,9 @@ Investigate native font backend(not fontconfig) via Gtk+
 
 doc section on developing for windows and testing/debugging
 
-Consolidate Semaphore classes
-
 Use nsis installer script from x-win, needs to be split
 
 Remove windows_packaging directory now that the scripts are no longer used or
 maintained
 
 Fix/Investigate two export folders in windows package in share/ardour3
-

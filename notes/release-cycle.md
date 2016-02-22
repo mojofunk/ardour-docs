@@ -23,13 +23,15 @@
 
 # Development Period
 
-- Announce start of development period
+- Announce start of development period.
+- Merge feature branches that are ready.
+- Straight forward fixes are accepted at any time during the dev period.
 
 # Release Period
 
 - Announce start of release period
 - Ask translators to work on translation updates
-
+- Only important fixes are allowed during the release period
 - Perform regression tests, including all issues in tracker that have been
 	fixed in this release and re-test.
 - Perform other acceptance tests.

@@ -30,3 +30,5 @@ Done - portaudio build options for getting debug output from the library etc
 
 Test that installing Fedora debug rpm for mingw packages works. I think this
 might have been broken at some point.
+
+Add audiographer tests to windows package
