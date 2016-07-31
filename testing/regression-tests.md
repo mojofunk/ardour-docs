@@ -51,6 +51,8 @@ tests.
 
 # Exporting
 
+- Test closing App after export with different backends/options
+
 # Preferences
 
 - [Can't remove custom click sound #6160](http://tracker.ardour.org/view.php?id=6160)
