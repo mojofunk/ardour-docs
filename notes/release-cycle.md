@@ -15,17 +15,22 @@
 - Add version identifier for next release to issue tracker in order to be use
 	in "Target Version" and "Fixed in Version" fields
 
-- Add version identifier for major release.X to issue tracker in order to be
-	used in the "Target Version" field to indicate that fix or feature is not
-	associated with a specific(minor) release.
+- Add version identifier for major release.X(for instance "3.X") to issue
+	tracker in order to be used in the "Target Version" field to indicate that
+	fix or feature is not associated with a specific(minor) release.
 
 - Add version identifier for major release+1.X to issue tracker
 
 # Development Period
 
-- Announce start of development period.
-- Merge feature branches that are ready.
-- Straight forward fixes are accepted at any time during the dev period.
+- Announce start of development period and publish/notify what was determined
+	in the planning period.
+- Merge feature branches that are ready/approved.
+- Minor fixes can be committed to master at any time during the dev period if they:
+  - Have a ticket in the Issue Tracker
+  - Can be reproduced using test case in Issue Tracker by someone other than
+  	the reporter
+  - Include a reference to the ticket in Issue Tracker in commit message
 
 # Release Period
 
@@ -35,7 +40,8 @@
 - Perform regression tests, including all issues in tracker that have been
 	fixed in this release and re-test.
 - Perform other acceptance tests.
-- Tag Release
+- Tag release candidates(rc)
+- Tag final release
 
 ## Announcments
 
