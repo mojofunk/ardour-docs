@@ -138,14 +138,21 @@ DONE - Enable or disable loggers
 
 ## ui::LogRecordListWidget
 
-Filter Records by cpu, thread, path/directory/file, function or file line range.
+Filter Records by Logger name, message, cpu, thread, path/directory/file, function, file
+line range.
 
 Selecting Records in the list can update the timeline view to show only records.
 
-## Log Timeline Widget
+## ui::LogRecordFilterWindow
 
-When selecting a time range in the timeline view the entries in the log window
-should be filtered or perhaps just selected.
+## ui::LogRecordFilterEditWidget
+
+## ui::LogRecordFilterListWidget
+
+## ui::LogRecordTimelineCanvasWidget
+
+When selecting a time range in the timeline view the entries in the
+LogRecordListWidget should be filtered or perhaps just selected.
 
 ## ui::ClassTrackerControlWidget
 
@@ -178,12 +185,6 @@ All the Log messages/calls made by the class
 ## ui::ClassInstanceTraceView
 
 Display of the current trace.
-
-## A General Log view
-
-The current logging system is not class based but domain/category based, It
-could be argued that this is necessary as the classes are too big and contain
-too much functionality but still, something that may be necessary to keep.
 
 ## A File view
 
