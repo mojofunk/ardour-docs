@@ -2,6 +2,12 @@
 
 # Issue Triage
 
+## Duplicate Issues
+
+If an new issue is found to be a duplicate then it should be marked as such and
+closed so that the original issue is the only communication channel regarding
+the issue.
+
 # Issue States
 
 Mantis issue status descriptions from the
