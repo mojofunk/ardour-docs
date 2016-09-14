@@ -128,8 +128,8 @@ a new bug.
 
 - With portaudio backend `midi_devices` member of EngineControl gets reset by
   maybe_display_state... between enumerating the midi devices and redisplaying
-  the midi devices which means the devices will not be shown correctly in
-  midi tab/page unless switching midi drivers or a valid state already exists.
+  the midi devices which means the devices will not be shown correctly in midi
+  tab/page unless switching midi drivers or a valid state already exists.
 
 - Midi note end trim tool should appear based on a fixed number of pixels not
   on a proportion of the note length
@@ -152,40 +152,110 @@ a new bug.
 - Tracks added while transport rolling are not played back
 
 - Ctrl + 't' to select all tracks and the 'F' to fit selected tracks causes
-	canvas drawing issues at bottom of track area
+  canvas drawing issues at bottom of track area
 
 - Drag and drop plugin from one track to another in mixer causes segv, may be
-	windows specific.
+  windows specific.
 
 - Removal of Nomad Factory BusDriver plugin causes segv(Windows 32-bit), not
-	sure if the issue is specific to this plugin
+  sure if the issue is specific to this plugin
 
 - On windows the Ardour session files do not have an associated icon(it looks
-	like a default one)
+  like a default one)
 
 - When play midi notes as they are selected is enabled, loading a session
-	causes midi notes to be played, rather than just when they are selected.
+  causes midi notes to be played, rather than just when they are selected.
 
 - Changing track color doesn't work if part of a group. When right clicking on
-	a track header and selecting color if tracks are in group, the group color
-	overrides the track color. This is fine I guess but not very obvious and made
-	me think it was a bug, perhaps it should warn the user that changing the
-	track color will have no affect as it is part of a group or just display a
-	dialog that asks "This track is part of a group and while the track is part
-	of a group the group color will override the track color, Do you want to
-	change the color for the group? Yes/No
+  a track header and selecting color if tracks are in group, the group color
+  overrides the track color. This is fine I guess but not very obvious and made
+  me think it was a bug, perhaps it should warn the user that changing the
+  track color will have no affect as it is part of a group or just display a
+  dialog that asks "This track is part of a group and while the track is part
+  of a group the group color will override the track color, Do you want to
+  change the color for the group? Yes/No
 
 - On Windows if the audio engine is started and then I change for instance the
-	samplerate setting in the RME config window, then it causes the application
-	to freeze/crash.
+  samplerate setting in the RME config window, then it causes the application
+  to freeze/crash.
 
-- In the new track dialog when entering a name, hitting enter should accept
-	the name close the dialog(create tracks), currently it does nothing.
+- In the new track dialog when entering a name, hitting enter should accept the
+  name and close the dialog(add tracks), currently it does nothing.
 
 - When Session Setup or Audio Setup windows are present the Gnome 3 window
-	manager won't tab to other applications. Window type/hint issue?
+  manager won't tab to other applications. Window type/hint issue?
 
 - Insert/Remove time dialog does not specify where the time will be inserted
 
 - The name of the mode of the clock should be displayed in Insert/Remove time
-	dialogs
+  dialogs
+
+- Pressing the Esc key while trimming a MIDI note event leaves note in strange
+  state.
+
+- Unable to undo cancelled drag of MIDI event. Pressing the Esc key to cancel
+  drag of MIDI note event moves the event without adding ability to undo/redo.
+
+- What is the black "Ghost note" being drawn in draw mode when over a MIDI
+  region
+
+- Black Ghost note in Draw mode does not reflect correct length of added midi
+  event.
+
+- Drawing MIDI events across region boundaries indicates incorrect note
+  placement? debatable whether ghost note should be shown past region end
+
+- Trimming the length of a MIDI region and then undo doesn't display MIDI
+  events
+
+- Trimming MIDI start or end points results in missing(perhaps moved) event,
+  Can't reproduce any more.
+
+- Unable to trim/move single MIDI event to grid, unable to produce.
+
+- Switching from Range mode to Draw mode does not hide range selection
+  rectangle
+
+- If Snap/Grid mode is set to Beats/X then MIDI events should not be able to be
+  created that are smaller than the current snap to/grid setting
+
+- Using draw mode, clicking to draw MIDI event and only moving one pixel
+  results in MIDI event not being created
+
+- Quantize dialog should be labelled to indicate that it is operating on the
+  Region Selection e.g. label should be "Quantize Selected Regions".
+
+- Scrolling on selected notes should not change note velocity without a
+  modifier. This makes it hard to navigate and causes changing velocity
+  unintentionally(nearly always).
+
+- I'm not sold on vertical scroll scrolling by track rather than a pixel based
+  scroll, It makes it hard to predict where a scroll will end up as larger
+  tracks mean a "faster" scroll speed.
+
+- Should scroll(not autoscroll) be disabled during drag or an option to prevent
+  scrolling and zooming? perhaps I'm just uncoordinated.
+
+- If loop end marker and session end marker are on the same position then
+  moving the end marker also moves the loop marker
+
+- Shortcut for Duplicate Range(perhaps others) doesn't always work, right
+  clicking on the range to bring up the menu and then clicking outside the menu
+  to hide it and then using the shortcut will now work.
+
+- If two Regions are overlapping and the one on the right is on top then
+  selecting the region on top first and then the region underneath, then
+  duplicating them will put the region that was on top underneath. Selecting
+  from left to right duplicates with wha appears to be the correct layering.
+
+- State of Auto-play in Import dialog is not stored and restored between
+  application executions
+
+- Shifting the contents of a region by Trimming and holding Ctrl stops if the
+  cursor moves outside the canvas. Makes it hard to trim contents at start of
+  timeline.
+
+- In the ExportDialog, if you are on the last FilePage and delete export format
+  you end up on a blank page and the 'add another format' button does not work.
+  Either when deleting the current visible format, the page should be changed
+  to the last format, or the 'add another format' button should be fixed.
