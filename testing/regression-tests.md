@@ -10,13 +10,16 @@ tests.
 - [Use an existing Session as template](http://tracker.ardour.org/view.php?id=5299)
 - [Crash when creating new session while there is currently opened other session](http://tracker.ardour.org/view.php?id=6766)
 - [Renaming the session root folder results in all media items missing](http://tracker.ardour.org/view.php?id=6557)
+- [The "id" property of some Controllable xml nodes is changed at first Session save](http://tracker.ardour.org/view.php?id=7025)
+- [Crash when exiting after opening second session](http://tracker.ardour.org/view.php?id=7033)
+- [Opening Session and moving start or end range/location markers and closing Session does not ask to save session](http://tracker.ardour.org/view.php?id=6774)
 
 # Transport/Recording
 
 - [Reduced volume during fast playback/rewind](http://tracker.ardour.org/view.php?id=6583)
 - [Changing region layers doesn't playback raised region](http://tracker.ardour.org/view.php?id=6570)
 - [Error in latency compensation](http://tracker.ardour.org/view.php?id=5781)
-- [When recording in a loop, some audio is not captured]http://tracker.ardour.org/view.php?id=5781)
+- [When recording in a loop, some audio is not captured](http://tracker.ardour.org/view.php?id=5781)
 
 # Mixer
 
@@ -34,6 +37,7 @@ tests.
 
 # MIDI
 
+- [Missing first note when midi region looped #5438](http://tracker.ardour.org/view.php?id=5438)
 - [MIDI Quantize doesn't work](http://tracker.ardour.org/view.php?id=5545)
 
 # Control Surfaces
@@ -44,6 +48,7 @@ tests.
 # Undo/Redo
 
 - [Crash when split while dragging region](http://tracker.ardour.org/view.php?id=6338)
+- [Undo should be disabled during recording](http://tracker.ardour.org/view.php?id=6540)
 
 # Importing
 
