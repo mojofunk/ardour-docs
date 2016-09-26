@@ -27,7 +27,6 @@
 # Undo/Redo
 
 - [Crash if two undo operations are performed at same time](http://tracker.ardour.org/view.php?id=6602)
-- [Undo should be disabled during recording](http://tracker.ardour.org/view.php?id=6540)
 
 # General
 
@@ -40,7 +39,6 @@
 # MIDI
 
 - [MIDI Mixer faders should be volume and not velocity multiplier](http://tracker.ardour.org/view.php?id=6040)
-- [Missing first note when midi region looped #5438](http://tracker.ardour.org/view.php?id=5438)
 - [MIDI note off issues #6340](http://tracker.ardour.org/view.php?id=6340)
 - [exported audio file(from MIDI Track) contains stuck notes](http://tracker.ardour.org/view.php?id=6492)
 - [MIDI Loop triggers the first note of the bar AFTER the loop end](http://tracker.ardour.org/view.php?id=6389)
