@@ -114,6 +114,8 @@ renamed
 Region boost gain should indicate how much gain is being boosted or show a
 dialog/allow preview etc.
 
+Replace all use of setting tooltips to using ARDOUR_UI_UTILS::set_tooltip
+
 # General
 
 Show splash screen at application start and do a plugin scan at that point
