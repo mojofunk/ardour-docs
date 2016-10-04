@@ -6,7 +6,7 @@ answers probably should be written down and added to documentation
 
 - how to Replace selected regions with another region?
 
-- Alt + s toggles solo for selected tracks, Alt + m should toggle mutes,
+- Alt + s toggles solo for selected tracks, should Alt + m toggle mutes?
   although that is currently bound to toggling the mixer.
 
 - Are there key bindings for deactivate all mutes/solos?
@@ -21,11 +21,9 @@ answers probably should be written down and added to documentation
 
 - Is portaudio output latency correctly reported considering buffering
 
-- Does Midi -> Reverse doesn't work?
+- Does Midi -> Reverse work?
 
 - How to copy MIDI notes?
-
-- Regions/Events should adjust on Tempo changes/BBT based track option
 
 - Is there an action to adjust/align region end with grid alignment
 
