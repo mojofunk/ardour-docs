@@ -51,6 +51,10 @@ An issue that is closed can not be edited or commented on so only
 developers/admin should set bugs to this state. It should be used for old bugs
 that are no longer relevant.
 
+An example is where the reporter has been asked for feedback but does not
+provide it, in which case after a reasonable length of time the issue should be
+closed.
+
 ## Bug Reports
 
 ## Feature Requests
