@@ -16,3 +16,9 @@ Investigate building Aubio with fftw support rather than inbuilt oura
 Investigate aligned malloc warning with rubberband when building with MSYS2/mingw.
 
 Package gtk2-engines for MSYS2 for clearlooks or use ardour version
+
+Update drobilla libraries for Fedora mingw packages
+- Serd 0.24.0
+- Sord 0.16.0
+- Lilv 0.24.0
+- Stratom 0.6.0
