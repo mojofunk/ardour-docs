@@ -33,21 +33,21 @@
   down
 
 - When importing number of files the session is saved after each import, it
-	seems like it could just save the session file once at the end of import.
+  seems like it could just save the session file once at the end of import.
 
 - Duplicate options to duplicate at beat/bar boundaries
 
 - Quantize region/event selection
 
 - The Trim handles are activated too far from the end of the region, It seems
-	like it is about 10 pixels, should be about half of that. Should not have to
-	zoom in so much to move small regions. This is on Windows, must test if it is
-	the same on linux.
+  like it is about 10 pixels, should be about half of that. Should not have to
+  zoom in so much to move small regions. This is on Windows, must test if it is
+  the same on linux.
 
 - shortcuts to step up/down the grid settings
 
 - When plugins are rescanned the instrument combo should be refreshed in Add
-	new track dialog
+  new track dialog
 
 - Use G and H for zoom in/out
 
@@ -55,7 +55,7 @@
 
 - Copy midi notes by modifier and drag?
 
-- Fit all tracks vertical key binding. Can be done with Ctrl+'t' then 'f'  
+- Fit all tracks vertical key binding. Can be done with Ctrl+'t' then 'f'
 
 - Constrain moving midi notes in x and y directions
 
@@ -64,17 +64,19 @@
 - Global Mute indicator and disable button
 
 - Different drawing modes for automation data, Cubase has: line, parabola,
-	sine, triangle, square, paint
+  sine, triangle, square, paint
 
 - Double click and drag in draw mode acts like a brush inserting notes at grid
-	intervals
+  intervals
 
 - Add key binding to loop region
 
 - Add midi step editor to track context menu
 
 - Midi draw cursor seems like it should be reversed and could use visual
-	improvements
+  improvements
 
-- Need a button in the editor to turn off follow playhead
+- A button in the editor to turn off follow playhead
 
+- Add a Timebase property(Linear, Musical) to Track class that is used by
+  region/playlist by default unless overridden.
