@@ -92,3 +92,26 @@ Move ARDOUR::find_named_node into libpbd
 Rename identifiers in ardour/filename_extensions.h from `*_suffix`
 to `*_extension`
 
+Extract function from ExportTimespanSelector::timecode_str and
+ARDOUR::ElementImporter::timecode_to_string
+
+Extract function from ExportTimespanSelector::ms_str
+
+Rename Timecode::Time::print to Timecode::Time::to_string and write docs to
+indicate it is/isn't localized. Add to_localized_string if necessary.
+
+Use XMLNode::child() API where appropriate rather than iterating to find a
+particular named node.
+
+member data in MetricSection should be protected not private
+
+Fix indentation in MuteMaster
+
+RCConfiguration::_control_protocol_state is set several times without deleting
+the existing XMLNode, investigate
+
+Use bbt_to_string in Region::_set_state() after string-convert-xml-prop merge
+
+Use PBD::to_string/string_to in midnam_patch.cc
+
+Use XMLNode::get/set_property API in midnam_patch.cc
