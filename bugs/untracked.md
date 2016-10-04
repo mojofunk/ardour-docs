@@ -4,13 +4,17 @@ A Place for bugs that are not yet in the tracker either because I'm offline, or 
 haven't had enough time to look for existing bugs in the tracker or enter it as
 a new bug.
 
-- Middle click to bind controls should bring up a warning/info box if there is
-  no controller active, perhaps with a don't show this again checkbox.
+- Ctrl+Middle click to bind controls should bring up a warning/info box if
+  there is no controller active, perhaps with a don't show this again checkbox.
 
 - Middle click to bind controller should have a timeout when no input is
   recieved with a suggestion as to how to get it to work. It could suggest
   going to midi tracer window and checking midi control input and could have an
   option to go there etc.
+
+- Binding GUI controls should be more intuitive, possibly use a learn button
+  and change colours of the GUI controls that can be bound, similar to Ableton
+  Live.
 
 - Support for VST3 plugins
 
@@ -259,3 +263,12 @@ a new bug.
   you end up on a blank page and the 'add another format' button does not work.
   Either when deleting the current visible format, the page should be changed
   to the last format, or the 'add another format' button should be fixed.
+
+- If you install Ardour major version X and already have config files for
+  version X-1, then selecting no to the dialog "Would you like these files to
+  be copied and used for Ardour 5.X?" does not result in the "Welcome to
+  Ardour" setup dialog being displayed, so you can setup default Session
+  folder, Monitoring options etc.
+
+- In Stretch mode clicking on a Region and releasing without any mouse movement
+  also triggers a time stretch (with the value 100.00 percent)
