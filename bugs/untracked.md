@@ -272,3 +272,6 @@ a new bug.
 
 - In Stretch mode clicking on a Region and releasing without any mouse movement
   also triggers a time stretch (with the value 100.00 percent)
+
+- Editing MIDI event velocity editing using Ctrl(primary modifier) and up/down
+  keys is blocked by default by Move selected tracks up/down.

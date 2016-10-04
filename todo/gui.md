@@ -157,3 +157,8 @@ Remove windows_packaging directory now that the scripts are no longer used or
 maintained
 
 Fix/Investigate two export folders in windows package in share/ardour3
+
+A way to indicate to binding system when some key combinations are hard coded,
+or allow a way to change them?  There should be a warning if the bindings are
+conflicting but there isn't because the bindings system doesn't know about the
+hard coded bindings, like those in MidiRegionView
