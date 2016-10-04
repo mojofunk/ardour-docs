@@ -100,4 +100,8 @@ Move PBD::basename_nosuffix into pbd/file_utils.h
 
 Rename PBD::basename_nosuffix to filename_no_extension
 
+Use glib for MD5 and remove pbd/md5.cc/h implementation
 
+Move PBD::sgettext and PBD::internationalize into pbd/i18n.h header and
+implementation into pbd/i18n.cc and remove pbd/convert.h include from i18n.h
+header.
