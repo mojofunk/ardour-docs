@@ -63,6 +63,16 @@ built in to an application.
 
 - Record log for a time period. i.e Record log output for X seconds
 
+- Step through records(via selection) to display calltrace and source code
+
+- Add option to update records only after recording stops
+
+- Give process threads useful names(process master, process slave 1 etc)
+
+- Use a monotonic counter for record id's
+
+- A button/check box in log control widget to enable/disable all?
+
 ## Logging Options
 
 When a user has an issue and a developer requires logging output what is the
@@ -91,7 +101,8 @@ Function scope timing should be done RAII style
 `A_LOG_TIME_SCOPE(PBD::Loggers::Init)` to ensure termination of timing events
 
 `A_LOG_FUNC_PARAM`
-`A_LOG_CLASS_VAR`
+`A_LOG_CLASS_VAR` or perhaps only the entire class state should be logged. Some
+form of property change notification/introspection would most likely be better.
 
 For timed events that record a log message at event start and event end, the
 cpu id may change. How will that impact display of events in UI
@@ -124,7 +135,9 @@ Preferences include:
 
 ## alogmm::Sink
 
-Implement a limit on the number of Records stored in the Sink
+DONE - Implement a limit on the number of Records stored in the Sink
+
+- GUI controls for record limit number
 
 Implement a filtering mechanism. The Sink should probably hold a set of filters
 that are applied when records are received and stored in a separate set of
@@ -184,7 +197,18 @@ All the Log messages/calls made by the class
 
 ## ui::ClassInstanceTraceView
 
-Display of the current trace.
+Display of the current trace 
+
+## ui::LogTraceView
+
+Display the stack trace of the currently selected log message
+
+## ui::SourceFileWindow
+
+When a Record is selected in the LogRecordWindow open the source file and
+highlight/move to the line.
+
+May need to use tabs/etc to display more than a single file at once
 
 ## A File view
 
