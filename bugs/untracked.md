@@ -275,3 +275,11 @@ a new bug.
 
 - Editing MIDI event velocity editing using Ctrl(primary modifier) and up/down
   keys is blocked by default by Move selected tracks up/down.
+
+- Esc should close IOSelector windows
+
+- With a vertical dual screen setup where Ardour is on the top screen, pressing
+  the output routing button for a track in the Mixer causes the menu to cross
+  the screens with the offical build. With a self build on Fedora 21 with
+  external/system libs it pops up above the button and is usable. What is the
+  reason for the difference?
