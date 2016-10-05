@@ -7,6 +7,7 @@ tests.
 
 # Sessions
 
+- [New Session](test-cases/session/new-session.md)
 - [Use an existing Session as template](http://tracker.ardour.org/view.php?id=5299)
 - [Crash when creating new session while there is currently opened other session](http://tracker.ardour.org/view.php?id=6766)
 - [Renaming the session root folder results in all media items missing](http://tracker.ardour.org/view.php?id=6557)
