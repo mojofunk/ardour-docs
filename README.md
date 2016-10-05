@@ -1,7 +1,12 @@
-This "Documentation" is intended to be a place where I can write down
-information and ideas related to Ardour.
+# Purpose
 
-It is not meant to be useful for others at this stage.
+This repository is intended to store personal notes and documentation relating
+to Ardour.
+
+Information may not be correct, most of it is based on my subjective opinion
+and is not meant to be useful for others. Any information I consider to be
+important will generally make its way into the official Ardour bug tracker, git
+repository, manual, mail archives etc. 
 
 # Conventions
 
