@@ -1,24 +1,20 @@
-# Title
+## Objective
 
-## Summary
+To test for the expected behaviour when creating a new Session
 
-### Objective
-
-To test creating of a new session via the GUI
-
-### Bug References
+## Bug References
 
 None
 
-### Unit Test References
+## Unit Test References
 
 `libs/ardour/test/test_new_session.cc`
 
-### Pre-Conditions
+## Pre-Conditions
 
 None
 
-### Test Case Dependencies
+## Test Case Dependencies
 
 Installation Test Case
 
@@ -29,16 +25,6 @@ Installation Test Case
 
 ## Expected Result
 
-That Session creation is successful with success expected input data and not
+Expected Success: Names with spaces, hypens and underscores, UTF-8 characters
 
-## Input Data
-
-### Success Expected
-
-- Names with spaces
-- Names with hypens and underscores
-- Names with UTF-8 characters
-
-### Failure Expected
-
-- Names with Colons/Semi-colons
+Expected Failure: Names with colons and semi-colons
