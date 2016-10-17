@@ -283,3 +283,6 @@ a new bug.
   the screens with the offical build. With a self build on Fedora 21 with
   external/system libs it pops up above the button and is usable. What is the
   reason for the difference?
+
+- Unit test failure with an optimized build, noticed as of version 5.4.10 in
+  InterpolationTest::cubicInterpolationTest
