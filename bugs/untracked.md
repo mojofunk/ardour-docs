@@ -18,7 +18,8 @@ a new bug.
 
 - Support for VST3 plugins
 
-- Cut a region before peak but peak shows in waveform of cut region before peak
+- Cut a region before peak but peak shows in waveform of cut region before
+  peak, can't reproduce this with 5.4.320
 
 - Setting a sync point with 'v' key quickly fills up the undo history if you
   hold the key down. perhaps it should only set it at key press/release?
@@ -186,9 +187,6 @@ a new bug.
 - In the new track dialog when entering a name, hitting enter should accept the
   name and close the dialog(add tracks), currently it does nothing.
 
-- When Session Setup or Audio Setup windows are present the Gnome 3 window
-  manager won't tab to other applications. Window type/hint issue?
-
 - Insert/Remove time dialog does not specify where the time will be inserted
 
 - The name of the mode of the clock should be displayed in Insert/Remove time
@@ -199,12 +197,6 @@ a new bug.
 
 - Unable to undo cancelled drag of MIDI event. Pressing the Esc key to cancel
   drag of MIDI note event moves the event without adding ability to undo/redo.
-
-- What is the black "Ghost note" being drawn in draw mode when over a MIDI
-  region
-
-- Black Ghost note in Draw mode does not reflect correct length of added midi
-  event.
 
 - Drawing MIDI events across region boundaries indicates incorrect note
   placement? debatable whether ghost note should be shown past region end
@@ -222,9 +214,6 @@ a new bug.
 
 - If Snap/Grid mode is set to Beats/X then MIDI events should not be able to be
   created that are smaller than the current snap to/grid setting
-
-- Using draw mode, clicking to draw MIDI event and only moving one pixel
-  results in MIDI event not being created
 
 - Quantize dialog should be labelled to indicate that it is operating on the
   Region Selection e.g. label should be "Quantize Selected Regions".
@@ -250,7 +239,7 @@ a new bug.
 - If two Regions are overlapping and the one on the right is on top then
   selecting the region on top first and then the region underneath, then
   duplicating them will put the region that was on top underneath. Selecting
-  from left to right duplicates with wha appears to be the correct layering.
+  from left to right duplicates with what appears to be the correct layering.
 
 - State of Auto-play in Import dialog is not stored and restored between
   application executions
@@ -286,3 +275,41 @@ a new bug.
 
 - Unit test failure with an optimized build, noticed as of version 5.4.10 in
   InterpolationTest::cubicInterpolationTest
+
+- Region menu should have Gain -> Reset Gain in addition to Boost and Cut to
+  reset Region boost gain to 0.0dB
+
+- When splitting with the edit point set to playhead, the split point is
+  snapped to grid
+
+- On AVLinux with nightly build 5.4.357 disconnecting from JACK results in
+  crash/assertion
+
+- Moving Region start or end position while playing midi note causes missing
+  note-off
+
+- Save as template does not save session first before copying Session file.
+  Create 4 Tracks -> save template -> load template -> No tracks in Session
+
+- Session templates with periods(.) in name get truncated.
+
+- Sessions created from a template but are not explicitly saved do not get a SR
+  or file resolution displayed in recent Session chooser?
+
+- MIDI notes should be created on click rather than on release, or the ghost
+  note should appear to look the same as an existing note.
+
+- Using split/"Cut Mode" to cut a MIDI region can result in incorrect length of
+  original region
+
+- Undo/Redo for split created when no split has occurred
+
+- Cross-Hair cursor should always be displayed in "Cut Mode" instead of just on
+  mouse click
+
+- Cross-Hair cursor should be displayed on top of regions in "Cut Mode"
+
+- Cross-Hair cursor displayed in wrong location on mouse press with grid on in
+  "Cut Mode"
+
+- Cross-Hair cursor should always be displayed in "Draw" mode
