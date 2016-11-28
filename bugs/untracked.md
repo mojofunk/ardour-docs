@@ -297,19 +297,21 @@ a new bug.
   or file resolution displayed in recent Session chooser?
 
 - MIDI notes should be created on click rather than on release, or the ghost
-  note should appear to look the same as an existing note.
+  note should appear on click to look the same as an existing note.
 
 - Using split/"Cut Mode" to cut a MIDI region can result in incorrect length of
   original region
 
 - Undo/Redo for split created when no split has occurred
 
-- Cross-Hair cursor should always be displayed in "Cut Mode" instead of just on
-  mouse click
+- Cross-Hair cursor should always be displayed in "Draw" mode?
 
-- Cross-Hair cursor should be displayed on top of regions in "Cut Mode"
+- Implement chunking? with scissor tool:
+  https://youtu.be/3V-94fzpfO4?list=RDIeW6QGmg6Gs&t=556
 
-- Cross-Hair cursor displayed in wrong location on mouse press with grid on in
-  "Cut Mode"
+- When recording CC/automation data on MIDI track and showing the automation
+  the lines are initially displayed in the "hover" state as if you had your
+  mouse over the line until you enter an leave the line with your mouse and
+  then it goes back to non-"hover" state.
 
-- Cross-Hair cursor should always be displayed in "Draw" mode
+- Add option to scrub when using the scissors tool/Cut Mode.
