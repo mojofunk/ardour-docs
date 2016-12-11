@@ -34,12 +34,12 @@ in contributing documentation that would be appreciated.
 - Update Region colors on theme change.
 - Fix/Support note translations.
 - Allow loading sessions with missing external files. [#7067, #7114]
-- Use distinct color identifier for meter clip indicator. [#7010] 
+- Use distinct color identifier for meter clip indicator. [#7010]
 - Prevent panners being reset when switching to Aux sends and back. [#6893]
 - Use correct BBT offset when using Insert Time. [#7072]
 - Fix restoration of key bindings assigned to Windows+key. [#7037]
-- Prevent duplicate moves when selecting regions on shared playlists. 
-- Fix crash when instrument instantiation fails on track creation. 
+- Prevent duplicate moves when selecting regions on shared playlists.
+- Fix crash when instrument instantiation fails on track creation.
 - Prevent infinite loop when calculating tick marks on low zoom levels.
 - Fix LTC-generator 24h wraparound
 - Correctly handle failed activation of Control Surface Modules
@@ -51,7 +51,7 @@ in contributing documentation that would be appreciated.
 - Fix LV2 state versioning with Session templates.
 - Include Aux Busses in default strip types in OSC Surface [#7090]
 - Fixes to Insert/Remove time dialog [#7072]
-- Fix intermittent hang when stopping PortaudioBackend [#7095] 
+- Fix intermittent hang when stopping PortaudioBackend [#7095]
 - Fix playlist XML nodes changing order on Session save [#7053]
 
 # General Changes and Improvements
@@ -145,3 +145,67 @@ Robert Scott
 Robin Gareus
 Tim Mayberry
 W.P. van Paassen
+
+# Development Summary 5ab33bdb..0d3c2a9d
+
+There has been a fair bit of development activity over the last two weeks with
+some nice bug fixes and improvements. What follows is a summary of additional
+commits and issues that have been addressed.
+
+One thing to note is that if you are using JACK1 then it seems the latest
+JACK1 release (0.125.0) will be required for the next Ardour release.
+
+# Fixes
+
+- Fix crash loading u-he Diva VST plugin on Windows
+- Fix Duplicating Tracks with Sidechains [#7117]
+- Fix incorrect Midi Region length when splitting
+- Fix for widget visibility with detached preferences window [#7002]
+- Fixes when creating MIDI notes in Sustained note mode [#7126]
+- Fixes when creating MIDI notes in Percussive note mode [#7130]
+- Fixes to Cut Mode to make the cut line visible and respect snap modifier
+- Fix inaudible Percussive notes being displayed at the end of the Region
+- Fix crash when editing pitch of notes to outside visible area [#7135]
+- Fix crash when deleting a MIDI Region while mouse over CC event
+- Fix concurrency/locking issue with Event Loop request invalidation [#7049]
+- Fix creation of playlists with duplicate names [#6523, #5681, #6497]
+- Fix output display for non-plugin processors in the Processor Box
+- Fix forwarding of output buffers by using correct channel count
+- Fix loading, recording & saving MIDI with PolyKeyPressure events [#6948]
+- Fixes to Duplicate Track [#7141, #7146]
+- Fixes to OSC Control Surface
+- Fix handling of pitch bend events by a-fluidsynth [#7140]
+
+# General
+
+- Speed up changes to AFL/PFL on large Sessions
+- Large improvements in time to process Solo changes [#7119]
+- Speed up Track/Bus creation time
+- Restrict ALSA input/output device selection to valid combinations
+- Speed up Track deletion when Editor Mixer Strip is visible
+
+# MIDI
+
+- Many minor fixes and improvements
+- Improved editing in Percussive note mode
+
+# Control Surfaces
+
+- Add OSC support to query strips internal sends [#7136]
+- Add OSC support to query plugins and their parameters [#7137]
+
+# Scripting
+
+- Add example script to modulate parameters globally
+- Add support for calling ARDOUR.DSP Lua functions from UI scripts
+- Add example script to process Regions selected in the Editor
+- Add MIDI LFO example script
+
+# Translations
+
+- Updated German translation
+- Updated French translation
+
+# Known Issues
+
+- Crash when starting JACK1 with versions prior to 0.125.0 [#7115]
