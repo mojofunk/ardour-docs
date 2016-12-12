@@ -5,8 +5,6 @@
 
 # Sessions
 
-- [Renaming session results in media missing](http://tracker.ardour.org/view.php?id=6557)
-
 # Transport and Recording
 
 - [Playback continues past loop end #6582](http://tracker.ardour.org/view.php?id=6582)
