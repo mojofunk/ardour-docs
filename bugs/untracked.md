@@ -84,9 +84,6 @@ a new bug.
 - No ALSA backend with default build? add 'auto' param to --with-backends
   option?
 
-- Placing the Draw tool at the start of a midi region causes the midi note to
-  extend from the end of the region to the start of the session.
-
 - When notes are selected and the keyboard is used to move notes, and undo/redo
   should not be created for each move, perhaps a timeout is needed.
 
@@ -315,3 +312,9 @@ a new bug.
   then it goes back to non-"hover" state.
 
 - Add option to scrub when using the scissors tool/Cut Mode.
+
+- When Save As is used the Info messages in the log window should be changed
+  from "attempting to copy directory/folder..." to "Copying folder to" etc
+
+- A new zoom state should not be created each time a ruler drag zoom changes
+  zoom. Only on button release.
