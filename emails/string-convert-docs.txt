@@ -1,0 +1,282 @@
+# Summary
+
+I've pushed a branch called string-convert to origin that I'd like some
+feedback on. It represents a fair bit of work over the last year or so and is
+attempt to make improvements to the de/serialization code in Ardour.
+
+There may be a few further tweaks necessary but I feel it is ready to merge
+assuming there are no issues with that, at an appropriate time.
+
+The changes result in some backwards compatible modifications to the Session
+file format and config files, so with that in mind it may be a candidate as a
+"feature" for the next major version and an increase in the Session file format
+version may be a good idea (although perhaps not necessary).
+
+To summarize the implementation, I've added a new C++ API in libpbd used for
+converting types <-> strings for built in types and for other types via
+template specialization. The API is intended to be thread safe and all
+conversions are performed as if in the C locale without changing the global C
+or C++ locales. Some requirements of the API were to ensure round-trip
+equality, reduce complexity, improve readability and increase the amount of
+error checking/logging.
+
+The new API is then used in the PBD::XMLNode, PBD::Properties and
+GUIObjectState classes and elsewhere to provide the above benefits and try to
+ensure there is only a single implementation for each type <-> string
+conversion. As a result the LocaleGuards that are used to guard internal string
+conversions are no longer necessary and are removed.
+
+
+# I18n and Serialization
+
+An application like Ardour that has native language support will generally use
+a users preferred locale setting from their system environment to determine
+what language is used and aspects like formatting of numeric values.
+
+Ardour uses the GNU gettext utilities and runtime library for retrieval of
+translated messages for display in the GUI. Ardour is written primarily in C++,
+so for locale specific formatting of numeric input and output, functionality
+from either the C standard library(sscanf/snprintf) or C++ standard
+library(iostreams) would normally be used.
+
+When the data that is part of the application state, like Session and
+configuration data gets converted from an in memory binary format to a
+string/character based format for serialization to disk, the numeric data
+should not be formatted in a locale specific format as it makes correct parsing
+dependent on using that locale. The main issue is some locales use a comma to
+mark the decimal point in floating point numbers(1.25 vs 1,25) or use grouping
+of integral numbers(1,200 vs 1200), so to avoid this all numeric data is
+formatted using the same locale, the "C" locale.
+
+To perform numeric conversion to and from numeric types with the "C" locale
+using the standard scanf/printf family of functions the locale has to be
+changed from the current locale (usually that is the users preferred locale set
+at the start of program execution to support NLS/localization) using
+setlocale() and then back again after numeric conversion.
+
+C and C++ use different data structures/classes to represent locale data. It is
+possible that the C and C++ API's have a different "setting" for the current
+global locale and slightly confusingly setting the C++ locale sets the C and
+C++ locale but setting the C locale only sets the C locale and not the C++
+locale.
+
+The standard C++ library supports the concept of imbuing (via std::ios::imbue)
+an iostream with a locale so that a specific locale is used when converting
+numeric data to a string or vica verca. Unfortunately this has not been well
+supported by C/C++ compilers/libraries and when I recently tested it did not
+work with all the platforms/options/compilers we use and is not currently used
+in the Ardour codebase.
+
+Also, changing the global C and or C++ locale is not thread-safe as it modifies
+shared global data which may be used from various C/C++ run-time functions,
+such as error messages, time/date, translation (gettext), floating point
+numbers formatting (printf/iostream) and parsing (scanf/iostream), character
+types (<ctype.h>) and wide to multi-byte characters conversion functions.
+
+This means that if one thread is accessing the global C locale while another is
+modifying the locale with ::setlocale it may lead to a crash on some systems
+(Windows and at least some versions of OS X). This would not normally be an
+issue if the application ensures that only a single thread uses API's that
+access global locale data. The GUI thread usually needs to use the C and or C++
+API's for localization so if the serialization code uses those same API's then
+that has to be taken into consideration. If the serialization code is executed
+in the GUI thread as it is in Ardour currently then there is not a thread
+safety issue. I think the only case currently where it may be an issue is when
+executing arbitrary code loaded via plugins/loadable modules in another thread. 
+
+
+# Current issues?
+
+## Round Trip Equality
+
+Round trip equality meaning to convert data from a binary format to a
+string/character representation for serialization and then back again will
+result in data that is considered to be equal to the value of the data before
+conversion.
+
+This is mostly relevant for floating point values that (in the worst case) need
+to be stored/serialized with a certain level of precision (9 decimal digits for
+float, 17 for double) so that the state restoration/deserialization results in
+an equality test passing. i.e
+	
+	double d = random_double();
+	assert (d == string_to<double> (to_string<double> (d)));
+
+Most of the floating point values that are stored as part of Ardour's state
+data do not use enough precision to pass a round trip equality test. I think
+this is sub-optimal.
+
+## Complexity
+
+Using API's like snprinf/sscanf that rely on the global locale mean using
+LocaleGuards to ensure that conversions like float <-> string are performed in
+the "C" locale. You have to remember to add a LocaleGuard in the scope that the
+conversion occurs as you can not be sure of the current setting of the global
+locale. There have been a number of bugs fixed in Ardour caused by issue over
+time.
+
+If a C++ class like std::stringstream is used to perform conversion then you
+would normally have to ensure that the global C++ locale was set to "C" for
+both float and integer conversions as decimal grouping may also be performed
+for numeric formatting of integers with the C++ API.
+
+## Thread Safety
+
+As mentioned above, changing the global C and C++ locales is not thread safe. As
+most DAW's including Ardour support loading plugins and we don't control what
+code is executed, it is possible (although unlikely) for a plugin to access the
+global C or C++ locale while we are changing the global locale and cause a
+crash.
+
+There are options on some platforms to have per thread global locales but it is
+not a portable solution (or a very good one IMO). There are also functions on
+some platforms like strtod_l and strtof_l that take a locale as a parameter and
+are thread safe.
+
+## Error checking
+
+If you look at the use of the C and C++ API's for serialization in the Ardour
+code base there is a lack of error checking. So any solution would hopefully
+improve this situation and allow for any errors to at least be identified.
+
+## Performance
+
+Not a major issue but changing the global locale on some platforms (at least
+Windows) can be a slow operation and some changes have been introduced in the
+past to mitigate this.
+
+
+# Implementation
+
+The changes introduce a simple C++ based API in the form of PBD::to_string()
+and PBD::string_to() template functions and conversion functions for the
+builtin types(bool,float,int32_t etc) which are declared in the
+pbd/string_convert.h header.
+
+The current implementation of the functions used to convert the builtin types
+use snprintf/sscanf for integer types, the glib function g_ascii_strtod and
+g_ascii_dtostr for float/double and simple code for bool.
+
+To simplify creating template specializations of to_string/string_to for enum
+types registered with the PBD::EnumWriter class, a simple macro
+DEFINE_ENUM_CONVERT is defined in pbd/types_convert.h. This replaces the need
+for i/ostream& operator>>/<<() for instance in ardour/types.h
+
+Many of the changes are related to changing the interface of XMLNode for
+setting properties which is used by much of the serialization code. The
+current XMLNode::property/add_property interface is mostly replaced by a new
+template based XMLNode::get/set_property interface that takes the name of the
+property and a reference to the variable to be de/serialized to/from and then
+internalizes the type <-> string conversion.
+
+For instance in the case of setting an XMLNode property:
+
+  snprintf (buf, sizeof (buf), "%.12g", _min_yval);
+  root->add_property ("min-yval", buf);
+
+Becomes:
+
+  root->set_property ("min-yval", _min_yval);
+
+Where XMLNode::set_property is defined as:
+
+template<class T>
+bool set_property (const char* name, const T& value)
+{
+  std::string str;
+  if (!PBD::to_string<T> (value, str)) {
+    return false;
+  }
+  return set_property(name, str);
+}
+
+And for getting the same property from an XMLNode:
+
+if ((prop = node.property (X_("min-yval"))) != 0) {
+  _min_yval = atof (prop->value ().c_str());
+} else {
+  _min_yval = FLT_MIN;
+}
+
+Becomes:
+
+if (!node.get_property (X_("min-yval"), _min_yval)) {
+  _min_yval = FLT_MIN;
+}
+
+Where XMLNode::get_property is defined as:
+
+template <class T>
+bool get_property (const char* name, T& value) const
+{
+  XMLProperty const* const prop = property (name);
+  if (!prop) {
+    return false;
+  }
+
+  if (!PBD::string_to<T>(prop->value (), value)) {
+    return false;
+  }
+  return true;
+}
+
+Which has the advantage in that it is checking that the property exists and
+that the string conversion was successful as you very rarely need to do them
+separately.
+
+The other main type of change in the branch is to replace all direct and
+indirect (via PBD::string_compose) use of std::stringstream for serialization
+so that the correct numeric conversion is not dependent on a LocaleGuard/global
+locale.
+
+As std::i/ostream derived classes by default use the global locale for numeric
+conversion and currently the global C++ locale is always set to use the "C"
+locale via PBD::LocaleGuard::LocaleGuard (and not reset in dtor).
+
+If it is intended that the global C++ locale is set to the users preferred
+locale and is used for conversion of numeric data to strings for display then
+perhaps the string_compose template should be renamed/aliased as something like
+i18n_compose/i18n_fmt to remind the user of the API that any numeric data types
+that are passed as arguments may be converted to a localized format and the API
+is not appropriate to use for serialization.
+
+In terms of testing performance of the new code I haven't done much conclusive
+testing but from what I have done on Linux there is a reduction in the time
+required to save a session of about 25%.
+
+# Examples of Session/Config file changes
+
+## Enums are saved as literal strings rather than numbers.
+
+So for instance:
+
+  <Option name="monitoring-model" value="2"/>
+  <Option name="meter-type-master" value="16"/>
+
+Becomes:
+
+  <Option name="monitoring-model" value="ExternalMonitoring"/>
+  <Option name="meter-type-master" value="MeterK20"/>
+
+## The string representation of all boolean values is the same
+
+At the moment this is yes/no which I think helps distiguish boolean values from
+numeric but it could easily be changed so they are 0/1 or whatever.
+
+So for instance:
+
+  <Option name="use-region-fades" value="1"/>
+  <Option name="use-transport-fades" value="1"/>
+  <Option name="use-monitor-fades" value="1"/>
+  <Option name="native-file-data-format" value="0"/>
+  <Option name="native-file-header-format" value="1"/>
+  <Option name="auto-play" value="0"/>
+
+Becomes:
+
+  <Option name="use-region-fades" value="yes"/>
+  <Option name="use-transport-fades" value="yes"/>
+  <Option name="use-monitor-fades" value="yes"/>
+  <Option name="native-file-data-format" value="FormatFloat"/>
+  <Option name="native-file-header-format" value="WAVE"/>
+  <Option name="auto-play" value="no"/>
