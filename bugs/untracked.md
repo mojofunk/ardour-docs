@@ -293,9 +293,6 @@ a new bug.
 - Sessions created from a template but are not explicitly saved do not get a SR
   or file resolution displayed in recent Session chooser?
 
-- MIDI notes should be created on click rather than on release, or the ghost
-  note should appear on click to look the same as an existing note.
-
 - Using split/"Cut Mode" to cut a MIDI region can result in incorrect length of
   original region
 
@@ -318,3 +315,36 @@ a new bug.
 
 - A new zoom state should not be created each time a ruler drag zoom changes
   zoom. Only on button release.
+
+- Auto save should only save to *.bak and explicit saves should save to *.bak
+  and swap with session file.
+
+- Mute tool
+
+- A library to abstract system testing that can be run during application
+  execution.
+
+- lv2 plugin that loads/assigns/etc sfz files. ZamSFZ?
+
+- Drag audio region to MIDI track to convert to MIDI region
+
+- When shrinking a MIDI track the Keyboard should reduce the amount of keys
+  visible to the notes in use?
+
+- Double clicking on a marker should play back from that position
+
+- Fix indentation in playlist.cc
+
+- Ctrl + Tab should cycle between current and last tab and it could behave like
+  some applications where it cycles if you do it quickly but alternates between
+  last if done slowly. See ConEmu.
+
+- Draw fade handles as triangles
+
+- Think of a good function to toggle between with Ctrl+~
+
+- VCA's created by right clicking on group and selecting Assign * to VCA -> New
+  has empty name.
+
+- Duplicate and Multi-Duplicate for range selections aren't in Main menu.
+  Duplicate is in context menu but not Multi-duplicate.
